@@ -32,7 +32,7 @@ export const Hero = () => {
             {/* Badge */}
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-8 animate-fade-in">
               <Sparkles className="w-4 h-4 text-primary" />
-              <span className="text-xs font-medium text-primary">7+ Years of Experience</span>
+              <span className="text-xs font-medium text-primary">7+ Years of Technical Experience</span>
             </div>
 
             {/* Main Heading */} 

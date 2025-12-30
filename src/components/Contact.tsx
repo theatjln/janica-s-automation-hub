@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Send, Mail, MapPin, Phone, Linkedin, Github, Loader2 } from "lucide-react";
+import { Send, Mail, MapPin, Phone, Linkedin, Facebook, Instagram, Twitter, Youtube, Loader2, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -87,17 +87,31 @@ export const Contact = () => {
                   </div>
                 </a>
 
+                <div 
+                  className="flex items-center gap-4 group"
+                >
+                  <div className="w-12 h-12 rounded-lg bg-tertiary/10 flex items-center justify-center group-hover:bg-tertiary/20 transition-colors">
+                    <MessageCircle className="w-5 h-5 text-tertiary" />
+                  </div>
+                  <div>
+                    <p className="text-sm text-muted-foreground">WhatsApp</p>
+                    <p className="font-medium group-hover:text-tertiary transition-colors">
+                      +60 133 864 886
+                    </p>
+                  </div>
+                </div>
+
                 <a
-                  href="tel:+60133864886"
+                  href="tel:+639958633866"
                   className="flex items-center gap-4 group"
                 >
                   <div className="w-12 h-12 rounded-lg bg-tertiary/10 flex items-center justify-center group-hover:bg-tertiary/20 transition-colors">
                     <Phone className="w-5 h-5 text-tertiary" />
                   </div>
                   <div>
-                    <p className="text-sm text-muted-foreground">Phone / WhatsApp</p>
+                    <p className="text-sm text-muted-foreground">Phone</p>
                     <p className="font-medium group-hover:text-tertiary transition-colors">
-                      +60 133 864 886
+                      +63 995 863 3866
                     </p>
                   </div>
                 </a>
@@ -111,6 +125,7 @@ export const Contact = () => {
                     <p className="font-medium">Davao City, Philippines</p>
                   </div>
                 </div>
+
               </div>
             </div>
 
@@ -121,7 +136,7 @@ export const Contact = () => {
               </h4>
               <div className="flex items-center gap-3">
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/nica-de-guzman-a01270262/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 rounded-lg bg-muted flex items-center justify-center hover:bg-primary/20 hover:text-primary transition-colors"
@@ -129,12 +144,39 @@ export const Contact = () => {
                   <Linkedin className="w-5 h-5" />
                 </a>
                 <a
-                  href="https://github.com"
+                  href="https://www.facebook.com/profile.php?id=61583945082101"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 rounded-lg bg-muted flex items-center justify-center hover:bg-primary/20 hover:text-primary transition-colors"
                 >
-                  <Github className="w-5 h-5" />
+                  <Facebook className="w-5 h-5" />
+                </a>
+                
+                <a
+                  href="https://www.youtube.com/@automatewithnica"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-lg bg-muted flex items-center justify-center hover:bg-primary/20 hover:text-primary transition-colors"
+                >
+                  <Youtube className="w-5 h-5" />
+                </a>
+
+                <a
+                  href="https://www.instagram.com/automatewithnica/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-lg bg-muted flex items-center justify-center hover:bg-primary/20 hover:text-primary transition-colors"
+                >
+                  <Instagram className="w-5 h-5" />
+                </a>
+
+                <a
+                  href="https://x.com/automatewnica"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-lg bg-muted flex items-center justify-center hover:bg-primary/20 hover:text-primary transition-colors"
+                >
+                  <Twitter className="w-5 h-5" />
                 </a>
               </div>
             </div>
