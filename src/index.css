@@ -15,14 +15,36 @@
     --popover: 0 0% 100%;
     --popover-foreground: 200 15% 15%;
 
-    --primary: 184 43% 24%;
+    /* --primary: 184 43% 24%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 5 89% 60%;
     --secondary-foreground: 0 0% 100%;
 
     --tertiary: 152 51% 70%;
-    --tertiary-foreground: 200 15% 15%;
+    --tertiary-foreground: 200 15% 15%; */
+
+  /* -start- Use #8bd8b0 as the primary color, #23545b as the secondary color, and the #ff6f61 as the tertiary color  */
+/* --primary: 160 50% 55%;      #8bd8b0 darkened slightly for better contrast on light bg */
+  /* --primary-foreground: 190 70% 15%;  Very dark teal text on primary */
+
+  /* --secondary: 186 60% 70%;    #23545b lightened to a muted blue-green */
+  /* --secondary-foreground: 0 0% 100%;  White or near-white on secondary */
+
+  /* --tertiary: 5 100% 65%;     #ff6f61 slightly desaturated/darkened for light mode */
+  /* --tertiary-foreground: 0 0% 10%;    Near-black text for strong readability */
+/* -end- Use #8bd8b0 as the primary color, #23545b as the secondary color, and the #ff6f61 as the tertiary color  */
+
+/* Light mode overrides */
+/* Use #FF6F61 as the primary color, #23545b as the secondary color, and the #8bd8b0 as the tertiary color */
+    --primary: 5 100% 65%;       /* #FF6F61 – slightly deeper coral for better contrast on light backgrounds */
+    --primary-foreground: 0 0% 10%;    /* Near-black text on primary */
+
+    --secondary: 186 60% 70%;    /* #23545b – lightened teal for light mode */
+    --secondary-foreground: 0 0% 100%; /* White text on secondary (if used as background) */
+
+    --tertiary: 160 50% 55%;     /* #8bd8b0 – deeper mint green for accents */
+    --tertiary-foreground: 190 70% 15%; /* Dark teal text remains strong */
 
     --muted: 200 10% 94%;
     --muted-foreground: 200 10% 45%;
@@ -68,14 +90,37 @@
     --popover: 220 12% 8%;
     --popover-foreground: 0 0% 95%;
 
-    --primary: 184 43% 24%;
+    /* --primary: 184 43% 24%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 5 89% 60%;
     --secondary-foreground: 0 0% 100%;
 
     --tertiary: 152 51% 70%;
-    --tertiary-foreground: 220 15% 10%;
+    --tertiary-foreground: 220 15% 10%; */
+
+    /* -start- Use #8bd8b0 as the primary color, #23545b as the secondary color, and the #ff6f61 as the tertiary color  */
+  /* --primary: 160 50% 80%;      #8bd8b0 – soft mint green as primary */
+  /* --primary-foreground: 0 0% 100%;  White text on primary */
+
+  /* --secondary: 186 60% 25%;    #23545b – deep teal as secondary */
+  /* --secondary-foreground: 0 0% 100%;  White text on secondary */
+
+  /* --tertiary: 5 100% 69%;     #ff6f61 – vibrant coral as tertiary */
+  /* --tertiary-foreground: 200 15% 15%;  Dark gray-blue text for readability on coral */
+/* -end- Use #8bd8b0 as the primary color, #23545b as the secondary color, and the #ff6f61 as the tertiary color  */
+
+/* Dark mode (default) */
+    /* Use #FF6F61 as the primary color, #23545b as the secondary color, and the #8bd8b0 as the tertiary color */
+    --primary: 5 100% 69%;       /* #FF6F61 – vibrant coral primary */
+    --primary-foreground: 0 0% 100%;   /* White text on primary */
+
+    --secondary: 186 60% 25%;    /* #23545b – deep teal secondary */
+    --secondary-foreground: 0 0% 100%; /* White text on secondary */
+
+    --tertiary: 160 50% 80%;     /* #8bd8b0 – soft mint green tertiary */
+    --tertiary-foreground: 190 70% 15%; /* Dark teal text on tertiary for good contrast */
+    
 
     --muted: 220 12% 15%;
     --muted-foreground: 220 10% 55%;
