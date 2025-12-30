@@ -92,18 +92,32 @@ const education = [
   },
 ];
 
+// const certifications = [
+//   "WordPress Web Page Building and Maintenance (Dec 2025)",
+//   "AI Automation with n8n (Dec 2025)",
+//   "HighLevel CRM Full Training (Dec 2025)",
+//   "Prompt Engineering (Nov 2025)",
+//   "No Code Automation with Make.com (Nov 2025)",
+//   "No Code Automation with Zapier (Nov 2025)",
+//   "SQL for Data Analysis (Nov 2025)",
+//   "META React Basics (May 2025)",
+//   "META HTML & CSS In-Depth (May 2025)",
+//   "CEFR EF SET English C2 Proficient (July 2025)",
+// ];
+
 const certifications = [
-  "WordPress Web Page Building and Maintenance (Dec 2025)",
-  "AI Automation with n8n (Dec 2025)",
-  "HighLevel CRM Full Training (Dec 2025)",
-  "Prompt Engineering (Nov 2025)",
-  "No Code Automation with Make.com (Nov 2025)",
-  "No Code Automation with Zapier (Nov 2025)",
-  "SQL for Data Analysis (Nov 2025)",
-  "META React Basics (May 2025)",
-  "META HTML & CSS In-Depth (May 2025)",
-  "CEFR EF SET English C2 Proficient (July 2025)",
+  {certfificate:"WordPress Web Page Building and Maintenance (Dec 2025)", link: "https://drive.google.com/file/d/1itLvj3nFD9Q0bQBIxPsO5JO1NBLCoHbL/view?usp=sharing"},
+  {certfificate:"AI Automation with n8n (Dec 2025)", link: "https://drive.google.com/file/d/1w3yqNnMu8Akz8AM3TIWvP0Cs4X4f51TB/view?usp=sharing"},
+  {certfificate:"HighLevel CRM Full Training (Dec 2025)", link: "https://drive.google.com/file/d/1qL1GaAIA1V6OIQZdibaz-HifzhdUpY_L/view?usp=sharing"},
+  {certfificate:"Prompt Engineering (Nov 2025)", link: "https://drive.google.com/file/d/1OP_Vdt4YbDqRzwFO3DRpCGp2BzBUL1rl/view?usp=sharing"},
+  {certfificate:"No Code Automation with Make.com (Nov 2025)", link: "https://drive.google.com/file/d/1IXFxbTVmtgBICs-aL3xw1HlrEXlnW5vA/view?usp=sharing"},
+  {certfificate:"No Code Automation with Zapier (Nov 2025)", link: "https://drive.google.com/drive/folders/1waxrG-J3PDy10h5rQFP81h10NeQsU23e?usp=sharing"},
+  {certfificate:"SQL for Data Analysis (Nov 2025)", link: "https://drive.google.com/file/d/1TF9vEnD2pIhx3_dkJpRoJyi7EsZqvmmH/view?usp=drive_link"},
+  {certfificate:"META React Basics (May 2025)", link: "https://drive.google.com/file/d/1ukAv1NB6az2aSUsZjDmp1cMDtlRvampf/view?usp=sharing"},
+  {certfificate:"META HTML & CSS In-Depth (May 2025)", link: "https://drive.google.com/file/d/1HUpRaIJb0ynNlfkAxRcCWm7P9KNstrKW/view?usp=sharing"},
+  {certfificate:"CEFR EF SET English C2 Proficient (July 2025)", link: "https://drive.google.com/file/d/1i9c3i0WiV9e_5UEAwiB6SqEtmd9wU4kt/view?usp=sharing"},
 ];
+
 
 export const Experience = () => {
   const [openItems, setOpenItems] = useState<number[]>([0, 1]);
@@ -224,13 +238,16 @@ export const Experience = () => {
               </h3>
               <div className="space-y-2 max-h-64 overflow-y-auto pr-2">
                 {certifications.map((cert, index) => (
-                  <div
+                  <a
+                    href={cert.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     key={index}
                     className="flex items-start gap-2 text-xs text-muted-foreground"
                   >
                     <ExternalLink className="w-3 h-3 mt-0.5 text-primary shrink-0" />
-                    {cert}
-                  </div>
+                    {cert.certfificate}
+                  </a>
                 ))}
               </div>
             </div>
