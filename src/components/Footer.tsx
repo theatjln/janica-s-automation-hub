@@ -21,8 +21,9 @@ export const Footer = () => {
 
           {/* Copyright */}
           <p className="text-sm text-muted-foreground flex items-center gap-1">
-            © {currentYear} Janica Liz De Guzman. Made with{" "}
-            <Heart className="w-4 h-4 text-primary fill-primary" /> in the Philippines.
+            © {currentYear} Janica Liz De Guzman. All rights reserved.{" "}
+            {/* Made with{" "}
+            <Heart className="w-4 h-4 text-primary fill-primary" /> in the Philippines. */}
           </p>
 
           {/* Back to Top */}

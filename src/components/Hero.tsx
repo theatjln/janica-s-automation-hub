@@ -1,4 +1,4 @@
-import { ArrowDown, Sparkles, Zap, Code, Database } from "lucide-react";
+import { ArrowDown, Sparkles, Zap, Code, Clock } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 import profilePhoto from "@/assets/profile-photo.png";
 
@@ -32,25 +32,25 @@ export const Hero = () => {
             {/* Badge */}
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-8 animate-fade-in">
               <Sparkles className="w-4 h-4 text-primary" />
-              <span className="text-sm font-medium text-primary">7+ Years of Experience</span>
+              <span className="text-xs font-medium text-primary">7+ Years of Experience</span>
             </div>
 
-            {/* Main Heading */}
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6 animate-fade-in delay-100">
+            {/* Main Heading */} 
+            <h1 className="text-4xl md:text-5xl lg:text-5xl font-heading font-bold mb-6 animate-fade-in delay-100">
               Technical Virtual
               <br />
               <span className="gradient-text">Assistant & Developer</span>
-            </h1>
-
+            </h1> 
+            
             {/* Professional Summary */}
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto lg:mx-0 mb-8 leading-relaxed animate-fade-in delay-200">
-              Skilled professional with a strong background in web development, business operations support, 
-              and workflow automation. Expert in optimizing processes using Zapier, Make, n8n, HighLevel CRM, 
-              and various AI integrations. Achieved{" "}
-              <span className="text-primary font-semibold">98% first-contact resolution</span> in e-payments support 
-              and optimized websites to achieve{" "}
-              <span className="text-tertiary font-semibold">90+ Lighthouse scores</span>.
+              Hi, I’m Janica — Your <span className="text-primary font-semibold">Workflow Automation Expert</span>.
+      
+              <span className="text-lg font-medium"><br/> I help busy entrepreneurs and teams automate repetitive tasks, connect tools seamlessly, and reclaim dozens of hours every week — using <span className="text-tertiary font-semibold">Zapier, Make, n8n, and custom code</span>.</span>
+
+              <span className="text-lg font-medium"> 7+ years delivering 25%+ efficiency gains and rapid, reliable setups.</span>
             </p>
+
 
             {/* Stats Row */}
             <div className="flex flex-wrap justify-center lg:justify-start gap-6 mb-10 animate-fade-in delay-300">
@@ -59,7 +59,7 @@ export const Hero = () => {
                   <Zap className="w-5 h-5 text-primary" />
                 </div>
                 <div className="text-left">
-                  <p className="text-2xl font-bold text-foreground">35%</p>
+                  <p className="text-2xl font-bold text-foreground">35%-50%</p>
                   <p className="text-xs text-muted-foreground">Tasks Automated</p>
                 </div>
               </div>
@@ -68,17 +68,17 @@ export const Hero = () => {
                   <Code className="w-5 h-5 text-tertiary" />
                 </div>
                 <div className="text-left">
-                  <p className="text-2xl font-bold text-foreground">15+</p>
-                  <p className="text-xs text-muted-foreground">Websites Built</p>
+                  <p className="text-2xl font-bold text-foreground">30+</p>
+                  <p className="text-xs text-muted-foreground">Tools Connected</p>
                 </div>
               </div>
               <div className="flex items-center gap-2">
                 <div className="w-10 h-10 rounded-lg bg-secondary/20 flex items-center justify-center">
-                  <Database className="w-5 h-5 text-secondary" />
+                  <Clock className="w-5 h-5 text-secondary" />
                 </div>
                 <div className="text-left">
-                  <p className="text-2xl font-bold text-foreground">25%</p>
-                  <p className="text-xs text-muted-foreground">Escalations Reduced</p>
+                  <p className="text-2xl font-bold text-foreground">20+</p>
+                  <p className="text-xs text-muted-foreground">Hours/Week Saved</p>
                 </div>
               </div>
             </div>
@@ -93,7 +93,7 @@ export const Hero = () => {
                   document.querySelector("#contact")?.scrollIntoView({ behavior: "smooth" });
                 }}
               >
-                Hire Me
+                Get Your Time Back →
               </a>
               <a
                 href="#projects"
@@ -129,7 +129,7 @@ export const Hero = () => {
               
               {/* Floating badge */}
               <div className="absolute -bottom-2 -right-2 bg-card border border-border px-4 py-2 rounded-full shadow-lg">
-                <span className="text-sm font-semibold text-primary">Open to Work</span>
+                {/* <span className="text-sm font-semibold text-primary">Open to Work</span> */}
               </div>
             </div>
           </div>

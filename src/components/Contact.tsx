@@ -148,10 +148,6 @@ export const Contact = () => {
                   <p className="text-xs text-muted-foreground">Years Experience</p>
                 </div>
                 <div>
-                  <p className="text-2xl font-bold text-tertiary">15+</p>
-                  <p className="text-xs text-muted-foreground">Websites Built</p>
-                </div>
-                <div>
                   <p className="text-2xl font-bold text-secondary">98%</p>
                   <p className="text-xs text-muted-foreground">Resolution Rate</p>
                 </div>

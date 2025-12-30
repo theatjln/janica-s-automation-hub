@@ -14,20 +14,20 @@ const services = [
   {
     icon: Workflow,
     title: "Workflow Automation",
-    description: "Streamline operations using Zapier, Make, n8n, and Node-RED. Reduce manual tasks by 35% with intelligent automation.",
-    tools: ["Zapier", "Make", "n8n", "Node-RED"],
+    description: "Streamline operations using Zapier, Make, and n8n. Reduce manual tasks by 35% with intelligent automation.",
+    tools: ["Zapier", "Make", "n8n"],
   },
   {
     icon: Code2,
     title: "Full-Stack Development",
-    description: "Build responsive web applications with React, Node.js, and modern frameworks. 15+ production websites delivered.",
-    tools: ["React", "Node.js", "PHP", "Laravel"],
+    description: "Build responsive web applications with React, Node.js, and modern frameworks. Production websites delivered.",
+    tools: ["React", "Node.js", "PHP", "Python"],
   },
   {
     icon: Database,
     title: "API Integration",
     description: "Connect systems seamlessly with REST APIs, payment gateways, and social integrations for unified workflows.",
-    tools: ["Stripe", "Twitter API", "Facebook API", "SMS"],
+    tools: ["Zapier", "Make","n8n","REST APIs", "Stripe"],
   },
   {
     icon: Bot,
@@ -39,7 +39,7 @@ const services = [
     icon: BarChart3,
     title: "CRM Management",
     description: "Optimize customer relationships with HighLevel, HubSpot, and custom CRM solutions with automated notifications.",
-    tools: ["HighLevel", "HubSpot", "Custom CRM"],
+    tools: ["HighLevel", "Custom CRM"],
   },
   {
     icon: Globe,

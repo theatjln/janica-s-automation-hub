@@ -9,7 +9,7 @@ const experiences = [
     period: "October 2025 – Present",
     duration: "3 months",
     highlights: [
-      "Automated complex workflows using Zapier, Make, n8n, and Node-RED to streamline operations in sales, HR, and CRM systems, reducing manual tasks by 35%.",
+      "Automated complex workflows using Zapier, Make, and n8n to streamline operations in sales, HR, and CRM systems, reducing manual tasks by 35% to 50%.",
       "Integrated AI tools for intelligent data processing, notifications, and analytics, enhancing efficiency and decision-making.",
       "Optimized manual operations and implemented CRM tweaks that minimized data entry by 35%.",
     ],
@@ -35,7 +35,7 @@ const experiences = [
     duration: "3 years",
     highlights: [
       "Managed CRM systems with automations for notifications via email, SMS, and social networks.",
-      "Designed and shipped 15+ websites using React, WordPress, and Shopify, emphasizing responsive UI and performance optimization.",
+      "Designed and shipped websites using React, WordPress, and Shopify, emphasizing responsive UI and performance optimization.",
       "Optimized Lighthouse scores to 90+ and reduced bounce rates by 30% through automated QR payments and email automations.",
     ],
   },
@@ -102,7 +102,7 @@ const certifications = [
   "SQL for Data Analysis (Nov 2025)",
   "META React Basics (May 2025)",
   "META HTML & CSS In-Depth (May 2025)",
-  "EF SET English C2 Proficient (July 2025)",
+  "CEFR EF SET English C2 Proficient (July 2025)",
 ];
 
 export const Experience = () => {
