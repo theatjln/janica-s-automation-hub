@@ -1,5 +1,6 @@
 import { ArrowDown, Sparkles, Zap, Code, Database } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
+import profilePhoto from "@/assets/profile-photo.png";
 
 export const Hero = () => {
   return (
@@ -25,83 +26,112 @@ export const Hero = () => {
       />
 
       <div className="container mx-auto px-4 pt-24 pb-16 relative z-10">
-        <div className="max-w-4xl mx-auto text-center">
-          {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-8 animate-fade-in">
-            <Sparkles className="w-4 h-4 text-primary" />
-            <span className="text-sm font-medium text-primary">7+ Years of Experience</span>
+        <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+          {/* Text Content */}
+          <div className="text-center lg:text-left order-2 lg:order-1">
+            {/* Badge */}
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-8 animate-fade-in">
+              <Sparkles className="w-4 h-4 text-primary" />
+              <span className="text-sm font-medium text-primary">7+ Years of Experience</span>
+            </div>
+
+            {/* Main Heading */}
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6 animate-fade-in delay-100">
+              Technical Virtual
+              <br />
+              <span className="gradient-text">Assistant & Developer</span>
+            </h1>
+
+            {/* Professional Summary */}
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto lg:mx-0 mb-8 leading-relaxed animate-fade-in delay-200">
+              Skilled professional with a strong background in web development, business operations support, 
+              and workflow automation. Expert in optimizing processes using Zapier, Make, n8n, HighLevel CRM, 
+              and various AI integrations. Achieved{" "}
+              <span className="text-primary font-semibold">98% first-contact resolution</span> in e-payments support 
+              and optimized websites to achieve{" "}
+              <span className="text-tertiary font-semibold">90+ Lighthouse scores</span>.
+            </p>
+
+            {/* Stats Row */}
+            <div className="flex flex-wrap justify-center lg:justify-start gap-6 mb-10 animate-fade-in delay-300">
+              <div className="flex items-center gap-2">
+                <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
+                  <Zap className="w-5 h-5 text-primary" />
+                </div>
+                <div className="text-left">
+                  <p className="text-2xl font-bold text-foreground">35%</p>
+                  <p className="text-xs text-muted-foreground">Tasks Automated</p>
+                </div>
+              </div>
+              <div className="flex items-center gap-2">
+                <div className="w-10 h-10 rounded-lg bg-tertiary/10 flex items-center justify-center">
+                  <Code className="w-5 h-5 text-tertiary" />
+                </div>
+                <div className="text-left">
+                  <p className="text-2xl font-bold text-foreground">15+</p>
+                  <p className="text-xs text-muted-foreground">Websites Built</p>
+                </div>
+              </div>
+              <div className="flex items-center gap-2">
+                <div className="w-10 h-10 rounded-lg bg-secondary/20 flex items-center justify-center">
+                  <Database className="w-5 h-5 text-secondary" />
+                </div>
+                <div className="text-left">
+                  <p className="text-2xl font-bold text-foreground">25%</p>
+                  <p className="text-xs text-muted-foreground">Escalations Reduced</p>
+                </div>
+              </div>
+            </div>
+
+            {/* CTA Buttons */}
+            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 animate-fade-in delay-400">
+              <a
+                href="#contact"
+                className="btn-hero"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.querySelector("#contact")?.scrollIntoView({ behavior: "smooth" });
+                }}
+              >
+                Hire Me
+              </a>
+              <a
+                href="#projects"
+                className="btn-outline-hero"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.querySelector("#projects")?.scrollIntoView({ behavior: "smooth" });
+                }}
+              >
+                View My Work
+              </a>
+            </div>
           </div>
 
-          {/* Main Heading */}
-          <h1 className="text-4xl md:text-5xl lg:text-7xl font-heading font-bold mb-6 animate-fade-in delay-100">
-            Technical Virtual
-            <br />
-            <span className="gradient-text">Assistant & Developer</span>
-          </h1>
-
-          {/* Professional Summary */}
-          <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-8 leading-relaxed animate-fade-in delay-200">
-            Skilled professional with a strong background in web development, business operations support, 
-            and workflow automation. Expert in optimizing processes using Zapier, Make, n8n, HighLevel CRM, 
-            and various AI integrations. Achieved{" "}
-            <span className="text-primary font-semibold">98% first-contact resolution</span> in e-payments support 
-            and optimized websites to achieve{" "}
-            <span className="text-tertiary font-semibold">90+ Lighthouse scores</span>.
-          </p>
-
-          {/* Stats Row */}
-          <div className="flex flex-wrap justify-center gap-8 mb-12 animate-fade-in delay-300">
-            <div className="flex items-center gap-2">
-              <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
-                <Zap className="w-5 h-5 text-primary" />
+          {/* Profile Photo */}
+          <div className="order-1 lg:order-2 flex justify-center animate-fade-in delay-200">
+            <div className="relative">
+              {/* Decorative rings */}
+              <div className="absolute inset-0 rounded-full border-2 border-primary/20 scale-110" />
+              <div className="absolute inset-0 rounded-full border-2 border-tertiary/10 scale-125" />
+              
+              {/* Glow effect */}
+              <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary/30 to-tertiary/30 blur-2xl scale-110" />
+              
+              {/* Image container */}
+              <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-primary/30 shadow-2xl">
+                <img
+                  src={profilePhoto}
+                  alt="Janica Liz De Guzman - Technical Virtual Assistant"
+                  className="w-full h-full object-cover object-center"
+                />
               </div>
-              <div className="text-left">
-                <p className="text-2xl font-bold text-foreground">35%</p>
-                <p className="text-xs text-muted-foreground">Tasks Automated</p>
+              
+              {/* Floating badge */}
+              <div className="absolute -bottom-2 -right-2 bg-card border border-border px-4 py-2 rounded-full shadow-lg">
+                <span className="text-sm font-semibold text-primary">Open to Work</span>
               </div>
             </div>
-            <div className="flex items-center gap-2">
-              <div className="w-10 h-10 rounded-lg bg-tertiary/10 flex items-center justify-center">
-                <Code className="w-5 h-5 text-tertiary" />
-              </div>
-              <div className="text-left">
-                <p className="text-2xl font-bold text-foreground">15+</p>
-                <p className="text-xs text-muted-foreground">Websites Built</p>
-              </div>
-            </div>
-            <div className="flex items-center gap-2">
-              <div className="w-10 h-10 rounded-lg bg-secondary/20 flex items-center justify-center">
-                <Database className="w-5 h-5 text-secondary" />
-              </div>
-              <div className="text-left">
-                <p className="text-2xl font-bold text-foreground">25%</p>
-                <p className="text-xs text-muted-foreground">Escalations Reduced</p>
-              </div>
-            </div>
-          </div>
-
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in delay-400">
-            <a
-              href="#contact"
-              className="btn-hero"
-              onClick={(e) => {
-                e.preventDefault();
-                document.querySelector("#contact")?.scrollIntoView({ behavior: "smooth" });
-              }}
-            >
-              Hire Me
-            </a>
-            <a
-              href="#projects"
-              className="btn-outline-hero"
-              onClick={(e) => {
-                e.preventDefault();
-                document.querySelector("#projects")?.scrollIntoView({ behavior: "smooth" });
-              }}
-            >
-              View My Work
-            </a>
           </div>
         </div>
 
