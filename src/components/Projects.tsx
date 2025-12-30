@@ -12,6 +12,15 @@ import n8nAiAgentFacebook from "@/assets/projects/n8n-ai-agent-facebook.png";
 import makeGmailAttachments from "@/assets/projects/make-gmail-attachments.png";
 import makeXeroAsana from "@/assets/projects/make-xero-asana.png";
 import makeSlackAlerts from "@/assets/projects/make-slack-alerts.png";
+// Zapier project imports
+import zapierWebformNotification from "@/assets/projects/zapier-webform-notification.png";
+import zapierSlackNotifier from "@/assets/projects/zapier-slack-notifier.png";
+import zapierTaskUpdater from "@/assets/projects/zapier-task-updater.png";
+import zapierSubZap from "@/assets/projects/zapier-sub-zap.png";
+import zapierAiContent from "@/assets/projects/zapier-ai-content.png";
+import zapierQuoteFollowup from "@/assets/projects/zapier-quote-followup.png";
+import zapierDailyFollowup from "@/assets/projects/zapier-daily-followup.png";
+import zapierAsanaCrm from "@/assets/projects/zapier-asana-crm.png";
 
 interface Project {
   id: string;
@@ -32,7 +41,7 @@ const projects: Project[] = [
     tool: "Zapier",
     description: "Automated email notifications triggered by web form submissions for instant lead response.",
     impact: "Reduced response time by 80%",
-    image: "/placeholder.svg",
+    image: zapierWebformNotification,
     videoUrl: "https://drive.google.com/file/d/1qxrOK8AgD3jRbVwfhysk-drnbywPNkXR/preview",
     techStack: ["Zapier", "Email", "Webforms"],
   },
@@ -42,7 +51,7 @@ const projects: Project[] = [
     tool: "Zapier",
     description: "Real-time Slack notifications for task updates and team collaboration.",
     impact: "Improved team communication",
-    image: "/placeholder.svg",
+    image: zapierSlackNotifier,
     videoUrl: "https://drive.google.com/file/d/12AWNw9Ds8kSQWDDEieGWylByKenj8Msl/preview",
     techStack: ["Zapier", "Slack", "Task Management"],
   },
@@ -52,7 +61,7 @@ const projects: Project[] = [
     tool: "Zapier",
     description: "Automated task status updates across multiple project management tools.",
     impact: "Saved 10+ hours weekly",
-    image: "/placeholder.svg",
+    image: zapierTaskUpdater,
     videoUrl: "https://drive.google.com/file/d/1C8lNieRkFVK3z7KbjT9vnQULAn9G5Gbo/preview",
     techStack: ["Zapier", "Asana", "Trello"],
   },
@@ -62,7 +71,7 @@ const projects: Project[] = [
     tool: "Zapier",
     description: "Complex multi-step automation calling sub-zaps for modular workflow design.",
     impact: "Modular automation architecture",
-    image: "/placeholder.svg",
+    image: zapierSubZap,
     videoUrl: "https://drive.google.com/file/d/1ZJvVC1JsyEz4Jj-ql6JP3HWtcB0HyI4_/preview",
     techStack: ["Zapier", "Sub-Zaps", "Workflow"],
   },
@@ -72,20 +81,37 @@ const projects: Project[] = [
     tool: "Zapier",
     description: "AI-powered content transformation for multi-platform distribution.",
     impact: "3x content output",
-    image: "/placeholder.svg",
+    image: zapierAiContent,
     videoUrl: "https://drive.google.com/file/d/1XEJKxlv-LSCnbXvwKRvDyBCcR0KavkRE/preview",
     techStack: ["Zapier", "AI/GPT", "Content Marketing"],
     isAiFocused: true,
   },
   {
-    id: "zapier-leads-enrichment",
-    title: "Zapier – Leads Enrichment",
+    id: "zapier-quote-followup",
+    title: "Zapier – Weekly Quote Follow-Up",
     tool: "Zapier",
-    description: "Automated lead data enrichment from multiple sources for sales intelligence.",
-    impact: "Increased lead quality by 40%",
-    image: "/placeholder.svg",
-    videoUrl: "https://drive.google.com/file/d/1rmsd7ycj63hd7JDyzuKnlRIpIRW9BAEH/preview",
-    techStack: ["Zapier", "CRM", "Data Enrichment"],
+    description: "Automated weekly email follow-ups for quote follow-up automation.",
+    impact: "Increased quote conversion by 35%",
+    image: zapierQuoteFollowup,
+    techStack: ["Zapier", "Email", "Asana", "Looping"],
+  },
+  {
+    id: "zapier-daily-followup",
+    title: "Zapier – Daily Unresponsive Leads",
+    tool: "Zapier",
+    description: "Daily automated email follow-ups for unresponsive leads to maximize conversions.",
+    impact: "25% more lead responses",
+    image: zapierDailyFollowup,
+    techStack: ["Zapier", "Email", "Asana", "Lead Nurturing"],
+  },
+  {
+    id: "zapier-asana-crm",
+    title: "Zapier – Asana CRM Lifecycle",
+    tool: "Zapier",
+    description: "Complete CRM lifecycle automation with multi-path workflows based on task status.",
+    impact: "Full sales pipeline automation",
+    image: zapierAsanaCrm,
+    techStack: ["Zapier", "Asana", "Gmail", "Google Drive", "Paths"],
   },
   {
     id: "make-slack-alerts",
