@@ -3,14 +3,14 @@ import { Quote, Star, User } from "lucide-react";
 const testimonials = [
   {
     quote: "She is very inquisitive at every details about what she is doing and very resourceful, independent in handling different issue she encountered or given",
-    author: "Fil Joseph Elman",
+    author: "Fil Elman",
     role: "Digital Creator, Technical Lead, Web Developer",
     rating: 5,
   },
   {
     quote: "Janica delivers outstanding service as a Technical Virtual Assistant, combining deep expertise in full-stack web development with exceptional customer support skills. She is highly reliable, proactive, and always ready to provide expert technical assistance—whether troubleshooting complex issues, implementing automations, or optimizing workflows. Her vast technical knowledge and helpful, can-do attitude make her an invaluable asset to any team needing seamless, high-quality virtual support.",
     author: "Yana Ahmad",
-    role: "Business Owner, Mechanical Engineer",
+    role: "Small Business Owner, Mechanical Engineer",
     rating: 5,
   },
   {
