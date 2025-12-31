@@ -5,8 +5,9 @@ import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/component
 const experiences = [
   {
     title: "Workflow Automation Specialist",
-    company: "Freelance / Remote",
-    period: "October 2025 – Present",
+    company: "Freelance",
+    location: "Remote",
+    period: "November 2025 – Present",
     duration: "3 months",
     highlights: [
       "Automated complex workflows using Zapier, Make, and n8n to streamline operations in sales, HR, and CRM systems, reducing manual tasks by 35% to 50%.",
