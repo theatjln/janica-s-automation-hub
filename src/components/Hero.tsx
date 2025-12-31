@@ -44,7 +44,7 @@ export const Hero = () => {
             
             {/* Professional Summary */}
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto lg:mx-0 mb-8 leading-relaxed animate-fade-in delay-200">
-              Hi, I’m Janica — Your <span className="text-tertiary font-semibold">Workflow Automation Expert</span>.
+              Hi, I’m Janica — Your <span className="text-secondary font-semibold">Workflow Automation Expert</span>.
       
               <span className="text-lg font-medium"><br/> I help busy entrepreneurs and teams automate repetitive tasks, connect tools seamlessly, and reclaim dozens of hours every week — using <span className="text-secondary font-semibold">Zapier, Make, n8n, and custom code</span>.</span>
 
