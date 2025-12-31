@@ -76,8 +76,8 @@ export const Contact = () => {
                   href="mailto:janicalizdeguzman@gmail.com"
                   className="flex items-center gap-4 group"
                 >
-                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                    <Mail className="w-5 h-5 text-primary" />
+                  <div className="w-12 h-12 rounded-lg bg-secondary/10 flex items-center justify-center group-hover:bg-secondary/20 transition-colors">
+                    <Mail className="w-5 h-5 text-secondary" />
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Email</p>
@@ -87,11 +87,12 @@ export const Contact = () => {
                   </div>
                 </a>
 
-                <div 
+                <a 
+                  href="https://wa.me/60133864886"
                   className="flex items-center gap-4 group"
                 >
-                  <div className="w-12 h-12 rounded-lg bg-tertiary/10 flex items-center justify-center group-hover:bg-tertiary/20 transition-colors">
-                    <MessageCircle className="w-5 h-5 text-tertiary" />
+                  <div className="w-12 h-12 rounded-lg bg-secondary/10 flex items-center justify-center group-hover:bg-secondary/20 transition-colors">
+                    <MessageCircle className="w-5 h-5 text-secondary" />
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">WhatsApp</p>
@@ -99,7 +100,7 @@ export const Contact = () => {
                       +60 133 864 886
                     </p>
                   </div>
-                </div>
+                </a>
 
                 <a
                   href="tel:+639958633866"
@@ -117,8 +118,8 @@ export const Contact = () => {
                 </a>
 
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-lg bg-secondary/20 flex items-center justify-center">
-                    <MapPin className="w-5 h-5 text-secondary" />
+                  <div className="w-12 h-12 rounded-lg bg-primary/20 flex items-center justify-center">
+                    <MapPin className="w-5 h-5 text-primary" />
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Location</p>
@@ -277,6 +278,7 @@ export const Contact = () => {
                   </>
                 )}
               </Button>
+              
             </form>
           </div>
         </div>
