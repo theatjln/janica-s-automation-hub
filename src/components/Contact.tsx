@@ -1,52 +1,7 @@
-import { useState } from "react";
-import { Send, Mail, MapPin, Phone, Linkedin, Facebook, Instagram, Twitter, Youtube, Loader2, MessageCircle } from "lucide-react";
+import { Mail, MapPin, Phone, Linkedin, Facebook, Instagram, Twitter, Youtube, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { useToast } from "@/hooks/use-toast";
 
 export const Contact = () => {
-  const { toast } = useToast();
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
-  };
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    if (!formData.name || !formData.email || !formData.message) {
-      toast({
-        title: "Missing fields",
-        description: "Please fill in all fields.",
-        variant: "destructive",
-      });
-      return;
-    }
-
-    setIsSubmitting(true);
-    
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1500));
-    
-    toast({
-      title: "Message sent!",
-      description: "Thank you for reaching out. I'll get back to you soon.",
-    });
-    
-    setFormData({ name: "", email: "", message: "" });
-    setIsSubmitting(false);
-  };
-
   return (
     <section id="contact" className="py-24 relative">
       {/* Background Elements */}
@@ -64,24 +19,25 @@ export const Contact = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
-          {/* Contact Info */}
-          <div className="space-y-8">
+        {/* Full-width, centered layout (no form) */}
+        <div className="max-w-3xl mx-auto">
+          <div className="space-y-12">
+            {/* Contact Information Cards */}
             <div>
-              <h3 className="text-xl font-heading font-semibold mb-6">
+              <h3 className="text-2xl font-heading font-semibold mb-8 text-center">
                 Contact Information
               </h3>
-              <div className="space-y-4">
+              <div className="grid sm:grid-cols-2 gap-8 mb-12">
                 <a
                   href="mailto:janicalizdeguzman@gmail.com"
-                  className="flex items-center gap-4 group"
+                  className="flex flex-col items-center gap-4 p-6 rounded-xl bg-card border border-border/50 hover:border-primary/50 transition-all group"
                 >
-                  <div className="w-12 h-12 rounded-lg bg-secondary/10 flex items-center justify-center group-hover:bg-secondary/20 transition-colors">
-                    <Mail className="w-5 h-5 text-secondary" />
+                  <div className="w-16 h-16 rounded-full bg-secondary/10 flex items-center justify-center group-hover:bg-secondary/20 transition-colors">
+                    <Mail className="w-8 h-8 text-secondary" />
                   </div>
-                  <div>
+                  <div className="text-center">
                     <p className="text-sm text-muted-foreground">Email</p>
-                    <p className="font-medium group-hover:text-primary transition-colors">
+                    <p className="font-semibold text-lg group-hover:text-primary transition-colors">
                       janicalizdeguzman@gmail.com
                     </p>
                   </div>
@@ -89,14 +45,16 @@ export const Contact = () => {
 
                 <a 
                   href="https://wa.me/60133864886"
-                  className="flex items-center gap-4 group"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex flex-col items-center gap-4 p-6 rounded-xl bg-card border border-border/50 hover:border-tertiary/50 transition-all group"
                 >
-                  <div className="w-12 h-12 rounded-lg bg-secondary/10 flex items-center justify-center group-hover:bg-secondary/20 transition-colors">
-                    <MessageCircle className="w-5 h-5 text-secondary" />
+                  <div className="w-16 h-16 rounded-full bg-secondary/10 flex items-center justify-center group-hover:bg-secondary/20 transition-colors">
+                    <MessageCircle className="w-8 h-8 text-secondary" />
                   </div>
-                  <div>
+                  <div className="text-center">
                     <p className="text-sm text-muted-foreground">WhatsApp</p>
-                    <p className="font-medium group-hover:text-tertiary transition-colors">
+                    <p className="font-semibold text-lg group-hover:text-tertiary transition-colors">
                       +60 133 864 886
                     </p>
                   </div>
@@ -104,182 +62,106 @@ export const Contact = () => {
 
                 <a
                   href="tel:+639958633866"
-                  className="flex items-center gap-4 group"
+                  className="flex flex-col items-center gap-4 p-6 rounded-xl bg-card border border-border/50 hover:border-tertiary/50 transition-all group"
                 >
-                  <div className="w-12 h-12 rounded-lg bg-tertiary/10 flex items-center justify-center group-hover:bg-tertiary/20 transition-colors">
-                    <Phone className="w-5 h-5 text-tertiary" />
+                  <div className="w-16 h-16 rounded-full bg-tertiary/10 flex items-center justify-center group-hover:bg-tertiary/20 transition-colors">
+                    <Phone className="w-8 h-8 text-tertiary" />
                   </div>
-                  <div>
+                  <div className="text-center">
                     <p className="text-sm text-muted-foreground">Phone</p>
-                    <p className="font-medium group-hover:text-tertiary transition-colors">
+                    <p className="font-semibold text-lg group-hover:text-tertiary transition-colors">
                       +63 995 863 3866
                     </p>
                   </div>
                 </a>
 
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-lg bg-primary/20 flex items-center justify-center">
-                    <MapPin className="w-5 h-5 text-primary" />
+                <div className="flex flex-col items-center gap-4 p-6 rounded-xl bg-card border border-border/50">
+                  <div className="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center">
+                    <MapPin className="w-8 h-8 text-primary" />
                   </div>
-                  <div>
+                  <div className="text-center">
                     <p className="text-sm text-muted-foreground">Location</p>
-                    <p className="font-medium">Davao City, Philippines</p>
+                    <p className="font-semibold text-lg">Davao City, Philippines</p>
                   </div>
                 </div>
-
               </div>
             </div>
 
             {/* Social Links */}
-            <div>
-              <h4 className="text-sm font-medium text-muted-foreground mb-4">
-                Follow Me
-              </h4>
-              <div className="flex items-center gap-3">
+            <div className="text-center">
+              <h4 className="text-lg font-medium mb-6">Follow Me</h4>
+              <div className="flex items-center justify-center gap-4">
                 <a
                   href="https://www.linkedin.com/in/nica-de-guzman-a01270262/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 rounded-lg bg-muted flex items-center justify-center hover:bg-primary/20 hover:text-primary transition-colors"
+                  className="w-12 h-12 rounded-full bg-muted flex items-center justify-center hover:bg-primary/20 hover:text-primary transition-all"
                 >
-                  <Linkedin className="w-5 h-5" />
+                  <Linkedin className="w-6 h-6" />
                 </a>
                 <a
                   href="https://www.facebook.com/profile.php?id=61583945082101"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 rounded-lg bg-muted flex items-center justify-center hover:bg-primary/20 hover:text-primary transition-colors"
+                  className="w-12 h-12 rounded-full bg-muted flex items-center justify-center hover:bg-primary/20 hover:text-primary transition-all"
                 >
-                  <Facebook className="w-5 h-5" />
+                  <Facebook className="w-6 h-6" />
                 </a>
-                
                 <a
                   href="https://www.youtube.com/@automatewithnica"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 rounded-lg bg-muted flex items-center justify-center hover:bg-primary/20 hover:text-primary transition-colors"
+                  className="w-12 h-12 rounded-full bg-muted flex items-center justify-center hover:bg-primary/20 hover:text-primary transition-all"
                 >
-                  <Youtube className="w-5 h-5" />
+                  <Youtube className="w-6 h-6" />
                 </a>
-
                 <a
                   href="https://www.instagram.com/automatewithnica/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 rounded-lg bg-muted flex items-center justify-center hover:bg-primary/20 hover:text-primary transition-colors"
+                  className="w-12 h-12 rounded-full bg-muted flex items-center justify-center hover:bg-primary/20 hover:text-primary transition-all"
                 >
-                  <Instagram className="w-5 h-5" />
+                  <Instagram className="w-6 h-6" />
                 </a>
-
                 <a
                   href="https://x.com/automatewnica"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 rounded-lg bg-muted flex items-center justify-center hover:bg-primary/20 hover:text-primary transition-colors"
+                  className="w-12 h-12 rounded-full bg-muted flex items-center justify-center hover:bg-primary/20 hover:text-primary transition-all"
                 >
-                  <Twitter className="w-5 h-5" />
+                  <Twitter className="w-6 h-6" />
                 </a>
               </div>
             </div>
 
             {/* Quick Stats */}
-            <div className="p-6 bg-card border border-border/50 rounded-xl">
-              <h4 className="font-heading font-semibold mb-4">Quick Stats</h4>
-              <div className="grid grid-cols-2 gap-4">
+            <div className="p-8 bg-card border border-border/50 rounded-2xl max-w-md mx-auto">
+              <h4 className="font-heading font-semibold text-center mb-6 text-lg">Quick Stats</h4>
+              <div className="grid grid-cols-3 gap-6 text-center">
                 <div>
-                  <p className="text-2xl font-bold text-primary">7+</p>
-                  <p className="text-xs text-muted-foreground">Years Experience</p>
+                  <p className="text-3xl font-bold text-primary">7+</p>
+                  <p className="text-sm text-muted-foreground mt-1">Years Experience</p>
                 </div>
                 <div>
-                  <p className="text-2xl font-bold text-secondary">98%</p>
-                  <p className="text-xs text-muted-foreground">Resolution Rate</p>
+                  <p className="text-3xl font-bold text-secondary">98%</p>
+                  <p className="text-sm text-muted-foreground mt-1">Resolution Rate</p>
                 </div>
                 <div>
-                  <p className="text-2xl font-bold text-foreground">C2</p>
-                  <p className="text-xs text-muted-foreground">English Level</p>
+                  <p className="text-3xl font-bold text-foreground">C2</p>
+                  <p className="text-sm text-muted-foreground mt-1">English Level</p>
                 </div>
               </div>
             </div>
-          </div>
 
-          {/* Contact Form */}
-          <div className="bg-card border border-border/50 rounded-xl p-8">
-            <h3 className="text-xl font-heading font-semibold mb-6">
-              Send a Message
-            </h3>
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div>
-                <label
-                  htmlFor="name"
-                  className="block text-sm font-medium mb-2"
-                >
-                  Your Name
-                </label>
-                <Input
-                  id="name"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  placeholder="John Doe"
-                  className="bg-background"
-                />
-              </div>
-
-              <div>
-                <label
-                  htmlFor="email"
-                  className="block text-sm font-medium mb-2"
-                >
-                  Email Address
-                </label>
-                <Input
-                  id="email"
-                  name="email"
-                  type="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  placeholder="john@example.com"
-                  className="bg-background"
-                />
-              </div>
-
-              <div>
-                <label
-                  htmlFor="message"
-                  className="block text-sm font-medium mb-2"
-                >
-                  Message
-                </label>
-                <Textarea
-                  id="message"
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  placeholder="Tell me about your project..."
-                  rows={5}
-                  className="bg-background resize-none"
-                />
-              </div>
-
-              <Button
-                type="submit"
-                className="w-full btn-hero"
-                disabled={isSubmitting}
-              >
-                {isSubmitting ? (
-                  <>
-                    <Loader2 className="w-4 h-4 mr-2 animate-spin" />
-                    Sending...
-                  </>
-                ) : (
-                  <>
-                    <Send className="w-4 h-4 mr-2" />
-                    Send Message
-                  </>
-                )}
+            {/* Optional Big CTA Button */}
+            <div className="text-center mt-8">
+              <Button size="lg" className="btn-hero text-lg px-10" asChild>
+                <a href="mailto:janicalizdeguzman@gmail.com">
+                  <Mail className="w-5 h-5 mr-2" />
+                  Email Me Directly
+                </a>
               </Button>
-              
-            </form>
+            </div>
           </div>
         </div>
       </div>
