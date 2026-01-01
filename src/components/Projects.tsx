@@ -21,6 +21,7 @@ import zapierAiContent from "@/assets/projects/zapier-ai-content.png";
 import zapierQuoteFollowup from "@/assets/projects/zapier-quote-followup.png";
 import zapierDailyFollowup from "@/assets/projects/zapier-daily-followup.png";
 import zapierAsanaCrm from "@/assets/projects/zapier-asana-crm.png";
+import wordpressElementorPortfolio from "@/assets/projects/wordpress-elementor-portfolio.png";
 
 interface Project {
   id: string;
@@ -204,6 +205,7 @@ const projects: Project[] = [
     tool: "WordPress",
     description: "Professional VA portfolio built with WordPress and Elementor featuring services showcase, work samples, and contact integration.",
     impact: "Full responsive portfolio",
+    image: wordpressElementorPortfolio,
     liveUrl: "https://automatewithnica.elementfx.com/",
     techStack: ["WordPress", "Elementor", "Responsive Design", "Contact Forms"],
   },
