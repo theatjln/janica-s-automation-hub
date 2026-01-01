@@ -2,22 +2,111 @@ import { useState } from "react";
 import { ChevronDown, MapPin, Calendar, ExternalLink } from "lucide-react";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
 
+// const experiences = [
+//   {
+//     title: "Workflow Automation Specialist",
+//     company: "Freelance",
+//     location: "Remote",
+//     period: "October 2025 – Present",
+//     duration: "3 months",
+//     highlights: [
+//       "Automated complex workflows using Zapier, Make, and n8n to streamline operations in sales, HR, and CRM systems, reducing manual tasks by 35% to 50%.",
+//       "Integrated AI tools for intelligent data processing, notifications, and analytics, enhancing efficiency and decision-making.",
+//       "Optimized manual operations and implemented CRM tweaks that minimized data entry by 35%.",
+//     ],
+//   },
+//   {
+//     title: "E-payments Account Specialist",
+//     company: "TDCX (FinTech SaaS)",
+//     location: "Kuala Lumpur, Malaysia",
+//     period: "October 2023 – October 2025",
+//     duration: "2 years",
+//     highlights: [
+//       "Provided expert technical support and client onboarding via chat, email, and calls, achieving 98% first-contact resolution while ranking in the top 1% for solution quality and client empathy.",
+//       "Created internal JavaScript-based tools, macros, and support tasks to improve efficiency by 25% and significantly reduce escalation volumes.",
+//       "Earned Hall of Famer awards for 100% UIQ in Product Support Onboarding (December 2024, October 2024, May 2024).",
+//       "Advocated customer feedback for product evolution and suggested UX/API improvements.",
+//     ],
+//   },
+//   {
+//     title: "Automation and CRM Management Specialist",
+//     company: "HomeBased (Freelance Web Developer)",
+//     location: "Remote",
+//     period: "December 2022 – Present",
+//     duration: "3 years",
+//     highlights: [
+//       "Managed CRM systems with automations for notifications via email, SMS, and social networks.",
+//       "Designed and shipped websites using React, WordPress, and Shopify, emphasizing responsive UI and performance optimization.",
+//       "Optimized for SEO and reduced bounce rates by 30% through automated QR payments and email automations.",
+//     ],
+//   },
+//   {
+//     title: "Virtual Assistant",
+//     company: "Pineapple Virtual Assistant Hub Agency",
+//     location: "Remote",
+//     period: "February 2023 – October 2023",
+//     duration: "8 months",
+//     highlights: [
+//       "Enhanced Shopify websites for better user experience and functionality using automation tools.",
+//       "Conducted extensive web research on diverse topics to deliver insightful analyses.",
+//       "Scheduled, managed, and automated email campaigns to increase engagement and sales.",
+//       "Created visually appealing marketing content, including graphics and multimedia with Canva.",
+//     ],
+//   },
+//   {
+//     title: "API Integration Developer",
+//     company: "Freelance",
+//     location: "Remote",
+//     period: "February 2019 – October 2023",
+//     duration: "4 years 9 months",
+//     highlights: [
+//       "Integrated APIs (Twitter, Facebook, Stripe Gateway, SMS Messaging) into web applications for seamless functionality.",
+//       "Developed full-stack solutions with Node.js, Express, React, and databases like Supabase.",
+//       "Collaborated on MVP development, ensuring API-driven features for payment processing and social integrations.",
+//     ],
+//   },
+//   {
+//     title: "Full-Stack Developer",
+//     company: "F-Squared, Inc.",
+//     location: "Davao, Philippines",
+//     period: "June 2018 – January 2019",
+//     duration: "8 months",
+//     highlights: [
+//       "Led a 4-developer team in delivering React and PHP modules, implementing automated tests and code reviews.",
+//       "Mentored junior developers on JavaScript best practices, accessibility, and API handling.",
+//       "Developed full-stack web solutions using React, PHP, and REST APIs, delivering responsive, accessible sites with integrated automations (forms, payments, CRM syncs) for seamless client workflows."
+//     ],
+//   },
+// ];
+
 const experiences = [
   {
     title: "Workflow Automation Specialist",
     company: "Freelance",
     location: "Remote",
-    period: "October 2025 – Present",
+    period: "November 2025 – Present",
     duration: "3 months",
     highlights: [
-      "Automated complex workflows using Zapier, Make, and n8n to streamline operations in sales, HR, and CRM systems, reducing manual tasks by 35% to 50%.",
-      "Integrated AI tools for intelligent data processing, notifications, and analytics, enhancing efficiency and decision-making.",
-      "Optimized manual operations and implemented CRM tweaks that minimized data entry by 35%.",
+      "Automated complex workflows using Zapier, Make.com, n8n, and GoHighLevel to streamline operations in sales, HR, and CRM systems, reducing manual tasks by 35–50%.",
+      "Integrated AI tools for intelligent data processing, notifications, and analytics, enhancing efficiency and decision-making.Integrated AI tools for intelligent data processing, notifications, and analytics, enhancing efficiency and decision-making.",
+      "Optimized manual operations and implemented CRM tweaks that minimized data entry by 35%.Optimized manual operations and implemented CRM tweaks that minimized data entry by 35%.",
     ],
   },
   {
-    title: "E-payments Account Specialist",
-    company: "TDCX (FinTech SaaS)",
+    title: "Automation and Web Development Specialist",
+    company: "HomeBased (Freelance Web Developer)",
+    location: "Remote",
+    period: "December 2017 – Present",
+    duration: "3 years",
+    highlights: [
+      "Designed and launched responsive WordPress/Elementor and Shopify websites, optimizing and reducing bounce rates by 30%+ through performance and SEO optimizations. Designed and launched responsive WordPress/Elementor and Shopify websites, optimizing and reducing bounce rates by 30%+ through performance and SEO optimizations.",
+      "Built CRM-connected automations using Zapier, Airtable, Google Sheets, and custom scripts for lead capture, QR payments, email sequences, and micro-business workflows.Built CRM-connected automations using Zapier, Airtable, Google Sheets, and custom scripts for lead capture, QR payments, email sequences, and micro-business workflows.",
+      "Delivered full-stack solutions integrating forms, payments, and CRM syncs to streamline client operations and boost conversionsDelivered full-stack solutions integrating forms, payments, and CRM syncs to streamline client operations and boost conversions.",
+    ],
+  },
+  {
+    title: "E-Payments Account Specialist (Fintech SaaS)",
+    company: "TDCX Malaysia",
     location: "Kuala Lumpur, Malaysia",
     period: "October 2023 – October 2025",
     duration: "2 years",
@@ -29,52 +118,15 @@ const experiences = [
     ],
   },
   {
-    title: "Automation and CRM Management Specialist",
-    company: "HomeBased (Freelance Web Developer)",
-    location: "Remote",
-    period: "December 2022 – Present",
-    duration: "3 years",
-    highlights: [
-      "Managed CRM systems with automations for notifications via email, SMS, and social networks.",
-      "Designed and shipped websites using React, WordPress, and Shopify, emphasizing responsive UI and performance optimization.",
-      "Optimized for SEO and reduced bounce rates by 30% through automated QR payments and email automations.",
-    ],
-  },
-  {
-    title: "Virtual Assistant",
-    company: "Pineapple Virtual Assistant Hub Agency",
-    location: "Remote",
-    period: "February 2023 – October 2023",
-    duration: "8 months",
-    highlights: [
-      "Enhanced Shopify websites for better user experience and functionality using automation tools.",
-      "Conducted extensive web research on diverse topics to deliver insightful analyses.",
-      "Scheduled, managed, and automated email campaigns to increase engagement and sales.",
-      "Created visually appealing marketing content, including graphics and multimedia with Canva.",
-    ],
-  },
-  {
-    title: "API Integration Developer",
-    company: "Freelance",
-    location: "Remote",
-    period: "February 2019 – October 2023",
-    duration: "4 years 9 months",
-    highlights: [
-      "Integrated APIs (Twitter, Facebook, Stripe Gateway, SMS Messaging) into web applications for seamless functionality.",
-      "Developed full-stack solutions with Node.js, Express, React, and databases like Supabase.",
-      "Collaborated on MVP development, ensuring API-driven features for payment processing and social integrations.",
-    ],
-  },
-  {
-    title: "Full-Stack Developer",
+    title: "Full-Stack Developer | Sofware Development Department Operations Manager",
     company: "F-Squared, Inc.",
     location: "Davao, Philippines",
     period: "June 2018 – January 2019",
     duration: "8 months",
     highlights: [
-      "Led a 4-developer team in delivering React and PHP modules, implementing automated tests and code reviews.",
-      "Mentored junior developers on JavaScript best practices, accessibility, and API handling.",
-      "Developed full-stack web solutions using React, PHP, and REST APIs, delivering responsive, accessible sites with integrated automations (forms, payments, CRM syncs) for seamless client workflows."
+      "Led a 4-developer team delivering React and PHP modules; implemented automated tests and code reviews.- Led a 4-developer team delivering React and PHP modules; implemented automated tests and code reviews.",
+      "Mentored junior developers on JavaScript best practices, accessibility, and API handling.Mentored junior developers on JavaScript best practices, accessibility, and API handling.",
+      "Developed full-stack solutions with integrated automations for seamless client workflows."
     ],
   },
 ];
