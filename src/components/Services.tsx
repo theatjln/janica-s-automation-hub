@@ -38,13 +38,13 @@ const services = [
   {
     icon: BarChart3,
     title: "CRM Management",
-    description: "Optimize customer relationships with HighLevel, HubSpot, and custom CRM solutions with automated notifications.",
+    description: "Optimize customer relationships with HighLevel, and custom CRM solutions with automated notifications.",
     tools: ["HighLevel", "Custom CRM"],
   },
   {
     icon: Globe,
     title: "Web Development",
-    description: "Create high-performance websites with 90+ Lighthouse scores, reducing bounce rates by 30%.",
+    description: "Create high-performance websites, reducing bounce rates by 30%.",
     tools: ["WordPress", "Shopify", "Elementor"],
   },
   {
