@@ -88,8 +88,8 @@ const experiences = [
     duration: "3 months",
     highlights: [
       "Automated complex workflows using Zapier, Make.com, n8n, and GoHighLevel to streamline operations in sales, HR, and CRM systems, reducing manual tasks by 35–50%.",
-      "Integrated AI tools for intelligent data processing, notifications, and analytics, enhancing efficiency and decision-making.Integrated AI tools for intelligent data processing, notifications, and analytics, enhancing efficiency and decision-making.",
-      "Optimized manual operations and implemented CRM tweaks that minimized data entry by 35%.Optimized manual operations and implemented CRM tweaks that minimized data entry by 35%.",
+      "Integrated AI tools for intelligent data processing, notifications, and analytics, enhancing efficiency and decision-making.",
+      "Optimized manual operations and implemented CRM tweaks that minimized data entry by 35%."
     ],
   },
   {
@@ -99,9 +99,9 @@ const experiences = [
     period: "December 2017 – Present",
     duration: "7 years+",
     highlights: [
-      "Designed and launched responsive WordPress/Elementor and Shopify websites, optimizing and reducing bounce rates by 30%+ through performance and SEO optimizations. Designed and launched responsive WordPress/Elementor and Shopify websites, optimizing and reducing bounce rates by 30%+ through performance and SEO optimizations.",
-      "Built CRM-connected automations using Zapier, Airtable, Google Sheets, and custom scripts for lead capture, QR payments, email sequences, and micro-business workflows.Built CRM-connected automations using Zapier, Airtable, Google Sheets, and custom scripts for lead capture, QR payments, email sequences, and micro-business workflows.",
-      "Delivered full-stack solutions integrating forms, payments, and CRM syncs to streamline client operations and boost conversionsDelivered full-stack solutions integrating forms, payments, and CRM syncs to streamline client operations and boost conversions.",
+      "Designed and launched responsive WordPress/Elementor and Shopify websites, optimizing and reducing bounce rates by 30%+ through performance and SEO optimizations.",
+      "Built CRM-connected automations using Zapier, Airtable, Google Sheets, and custom scripts for lead capture, QR payments, email sequences, and micro-business workflows.",
+      "Delivered full-stack solutions integrating forms, payments, and CRM syncs to streamline client operations and boost conversions.",
     ],
   },
   {
@@ -124,8 +124,8 @@ const experiences = [
     period: "June 2018 – January 2019",
     duration: "8 months",
     highlights: [
-      "Led a 4-developer team delivering React and PHP modules; implemented automated tests and code reviews.- Led a 4-developer team delivering React and PHP modules; implemented automated tests and code reviews.",
-      "Mentored junior developers on JavaScript best practices, accessibility, and API handling.Mentored junior developers on JavaScript best practices, accessibility, and API handling.",
+      "Led a 4-developer team delivering React and PHP modules; implemented automated tests and code reviews.",
+      "Mentored junior developers on JavaScript best practices, accessibility, and API handling.",
       "Developed full-stack solutions with integrated automations for seamless client workflows."
     ],
   },
