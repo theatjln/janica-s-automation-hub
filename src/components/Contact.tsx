@@ -135,20 +135,28 @@ export const Contact = () => {
             </div>
 
             {/* Quick Stats */}
-            <div className="p-8 bg-card border border-border/50 rounded-2xl max-w-md mx-auto">
+            <div className="p-8 bg-card border border-border/50 rounded-2xl max-w-2xl mx-auto">
               <h4 className="font-heading font-semibold text-center mb-6 text-lg">Quick Stats</h4>
-              <div className="grid grid-cols-3 gap-6 text-center">
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 text-center">
                 <div>
                   <p className="text-3xl font-bold text-primary">7+</p>
-                  <p className="text-sm text-muted-foreground mt-1">Years Experience</p>
+                  <p className="text-sm text-muted-foreground mt-1">Technical Experience</p>
                 </div>
                 <div>
-                  <p className="text-3xl font-bold text-secondary">98%</p>
+                  <p className="text-3xl font-bold text-secondary">35–50%</p>
+                  <p className="text-sm text-muted-foreground mt-1">Tasks Automated</p>
+                </div>
+                <div>
+                  <p className="text-3xl font-bold text-primary">20+</p>
+                  <p className="text-sm text-muted-foreground mt-1">Hours/Week Saved</p>
+                </div>
+                <div>
+                  <p className="text-3xl font-bold text-secondary">30+</p>
+                  <p className="text-sm text-muted-foreground mt-1">Tools Connected</p>
+                </div>
+                <div>
+                  <p className="text-3xl font-bold text-primary">98%</p>
                   <p className="text-sm text-muted-foreground mt-1">Resolution Rate</p>
-                </div>
-                <div>
-                  <p className="text-3xl font-bold text-foreground">C2</p>
-                  <p className="text-sm text-muted-foreground mt-1">English Level</p>
                 </div>
               </div>
             </div>
