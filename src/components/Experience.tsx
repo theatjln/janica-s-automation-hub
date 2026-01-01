@@ -22,7 +22,7 @@ const experiences = [
     period: "October 2023 – October 2025",
     duration: "2 years",
     highlights: [
-      "Delivered exceptional customer support via chat, outbound calls, and email, achieving 98% first-contact resolution and top 1% in quality and empathy metrics.",
+      "Provided expert technical support and client onboarding via chat, email, and calls, achieving 98% first-contact resolution while ranking in the top 1% for solution quality and client empathy.",
       "Created internal JavaScript-based tools, macros, and support tasks to improve efficiency by 25% and significantly reduce escalation volumes.",
       "Earned Hall of Famer awards for 100% UIQ in Product Support Onboarding (December 2024, October 2024, May 2024).",
       "Advocated customer feedback for product evolution and suggested UX/API improvements.",
@@ -37,7 +37,7 @@ const experiences = [
     highlights: [
       "Managed CRM systems with automations for notifications via email, SMS, and social networks.",
       "Designed and shipped websites using React, WordPress, and Shopify, emphasizing responsive UI and performance optimization.",
-      "Optimized Lighthouse scores to 90+ and reduced bounce rates by 30% through automated QR payments and email automations.",
+      "Optimized for SEO and reduced bounce rates by 30% through automated QR payments and email automations.",
     ],
   },
   {
@@ -61,7 +61,7 @@ const experiences = [
     duration: "4 years 9 months",
     highlights: [
       "Integrated APIs (Twitter, Facebook, Stripe Gateway, SMS Messaging) into web applications for seamless functionality.",
-      "Developed full-stack solutions with Node.js, Express, React, and databases like Supabase and Prisma.",
+      "Developed full-stack solutions with Node.js, Express, React, and databases like Supabase.",
       "Collaborated on MVP development, ensuring API-driven features for payment processing and social integrations.",
     ],
   },
@@ -74,6 +74,7 @@ const experiences = [
     highlights: [
       "Led a 4-developer team in delivering React and PHP modules, implementing automated tests and code reviews.",
       "Mentored junior developers on JavaScript best practices, accessibility, and API handling.",
+      "Developed full-stack web solutions using React, PHP, and REST APIs, delivering responsive, accessible sites with integrated automations (forms, payments, CRM syncs) for seamless client workflows."
     ],
   },
 ];
