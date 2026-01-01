@@ -25,11 +25,12 @@ import zapierAsanaCrm from "@/assets/projects/zapier-asana-crm.png";
 interface Project {
   id: string;
   title: string;
-  tool: "Zapier" | "Make" | "n8n" | "GoHighLevel";
+  tool: "Zapier" | "Make" | "n8n" | "GoHighLevel" | "WordPress";
   description: string;
   impact: string;
-  image: string;
+  image?: string;
   videoUrl?: string;
+  liveUrl?: string;
   techStack: string[];
   isAiFocused?: boolean;
 }
@@ -197,15 +198,25 @@ const projects: Project[] = [
     image: gohighlevelLeadCapture,
     techStack: ["GoHighLevel", "SMS", "Calls", "Contracts"],
   },
+  {
+    id: "wordpress-elementor-portfolio",
+    title: "WordPress – Elementor Portfolio Website",
+    tool: "WordPress",
+    description: "Professional VA portfolio built with WordPress and Elementor featuring services showcase, work samples, and contact integration.",
+    impact: "Full responsive portfolio",
+    liveUrl: "https://automatewithnica.elementfx.com/",
+    techStack: ["WordPress", "Elementor", "Responsive Design", "Contact Forms"],
+  },
 ];
 
-const filterOptions = ["All", "Zapier", "Make", "n8n", "GoHighLevel", "AI-Focused"];
+const filterOptions = ["All", "Zapier", "Make", "n8n", "GoHighLevel", "WordPress", "AI-Focused"];
 
 const toolColors: Record<string, string> = {
   Zapier: "tool-badge zapier",
   Make: "tool-badge make",
   n8n: "tool-badge n8n",
   GoHighLevel: "tool-badge gohighlevel",
+  WordPress: "tool-badge wordpress",
 };
 
 export const Projects = () => {
@@ -216,6 +227,7 @@ export const Projects = () => {
     if (activeFilter === "All") return true;
     if (activeFilter === "AI-Focused") return project.isAiFocused;
     if (activeFilter === "Make") return project.tool === "Make";
+    if (activeFilter === "WordPress") return project.tool === "WordPress";
     return project.tool === activeFilter;
   });
 
@@ -286,11 +298,15 @@ export const Projects = () => {
                   </div>
                 )}
 
-                {/* Play Button */}
-                {project.videoUrl && (
+                {/* Play Button or External Link */}
+                {(project.videoUrl || project.liveUrl) && (
                   <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 z-20">
                     <div className="w-14 h-14 rounded-full bg-primary/90 flex items-center justify-center transform scale-75 group-hover:scale-100 transition-transform animate-pulse-glow">
-                      <Play className="w-6 h-6 text-primary-foreground ml-1" />
+                      {project.liveUrl ? (
+                        <ExternalLink className="w-6 h-6 text-primary-foreground" />
+                      ) : (
+                        <Play className="w-6 h-6 text-primary-foreground ml-1" />
+                      )}
                     </div>
                   </div>
                 )}
@@ -306,7 +322,7 @@ export const Projects = () => {
                 </p>
                 <div className="flex items-center gap-2">
                   <span className="text-xs font-medium text-tertiary">{project.impact}</span>
-                  {project.videoUrl && (
+                  {(project.videoUrl || project.liveUrl) && (
                     <ExternalLink className="w-3 h-3 text-muted-foreground" />
                   )}
                 </div>
@@ -326,13 +342,21 @@ export const Projects = () => {
           
           {selectedProject && (
             <div className="grid md:grid-cols-2 gap-0">
-              {/* Image Side */}
+              {/* Image/Live Site Side */}
               <div className="relative bg-muted aspect-video md:aspect-auto md:h-full min-h-[300px]">
-                <img
-                  src={selectedProject.image}
-                  alt={selectedProject.title}
-                  className="w-full h-full object-cover"
-                />
+                {selectedProject.liveUrl ? (
+                  <iframe
+                    src={selectedProject.liveUrl}
+                    className="w-full h-full"
+                    title={`${selectedProject.title} Live Preview`}
+                  />
+                ) : (
+                  <img
+                    src={selectedProject.image}
+                    alt={selectedProject.title}
+                    className="w-full h-full object-cover"
+                  />
+                )}
                 <div className="absolute top-4 left-4">
                   <span className={toolColors[selectedProject.tool]}>
                     {selectedProject.tool}
@@ -353,6 +377,17 @@ export const Projects = () => {
                     <span className="text-sm font-semibold text-primary">Impact:</span>
                     <span className="text-sm text-tertiary">{selectedProject.impact}</span>
                   </div>
+                  {selectedProject.liveUrl && (
+                    <a
+                      href={selectedProject.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 text-sm text-primary hover:underline mb-4"
+                    >
+                      <ExternalLink className="w-4 h-4" />
+                      Visit Live Site
+                    </a>
+                  )}
                 </div>
 
                 {/* Video Embed */}

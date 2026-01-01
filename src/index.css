@@ -302,6 +302,10 @@
   .tool-badge.gohighlevel {
     @apply bg-blue-500/20 text-blue-400;
   }
+
+  .tool-badge.wordpress {
+    @apply bg-sky-500/20 text-sky-400;
+  }
 }
 
 @layer utilities {
