@@ -32,7 +32,7 @@ export const Hero = () => {
             {/* Badge */}
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-8 animate-fade-in">
               <Sparkles className="w-4 h-4 text-primary" />
-              <span className="text-xs font-medium text-primary">7+ Years of Technical Experience</span>
+              <span className="text-xs font-medium text-primary">8+ Years of Technical Experience</span>
             </div>
 
             {/* Main Heading */} 
@@ -48,7 +48,7 @@ export const Hero = () => {
       
               <span className="text-lg font-medium"><br/> I help busy entrepreneurs and teams automate repetitive tasks, connect tools seamlessly, and reclaim dozens of hours every week — using <span className="text-secondary font-semibold">Zapier, Make, n8n, and custom code</span>.</span>
 
-              <span className="text-lg font-medium"> 7+ years delivering 25%+ efficiency gains and rapid, reliable setups.</span>
+              <span className="text-lg font-medium"> 8+ years delivering 25%+ efficiency gains and rapid, reliable setups.</span>
             </p>
 
 
