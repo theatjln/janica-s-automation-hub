@@ -97,7 +97,7 @@ const experiences = [
     company: "HomeBased (Freelance Web Developer)",
     location: "Remote",
     period: "December 2017 – Present",
-    duration: "3 years",
+    duration: "8 years+",
     highlights: [
       "Designed and launched responsive WordPress/Elementor and Shopify websites, optimizing and reducing bounce rates by 30%+ through performance and SEO optimizations. Designed and launched responsive WordPress/Elementor and Shopify websites, optimizing and reducing bounce rates by 30%+ through performance and SEO optimizations.",
       "Built CRM-connected automations using Zapier, Airtable, Google Sheets, and custom scripts for lead capture, QR payments, email sequences, and micro-business workflows.Built CRM-connected automations using Zapier, Airtable, Google Sheets, and custom scripts for lead capture, QR payments, email sequences, and micro-business workflows.",
