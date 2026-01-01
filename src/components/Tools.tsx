@@ -31,7 +31,7 @@ export const Tools = () => {
     <section id="tools" className="py-20 bg-muted/30">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="section-heading">Tools I Use</h2>
+          <h2 className="section-heading">Tools I <span className="text-primary">Use</span></h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             Expertise across industry-leading automation, productivity, and development platforms
           </p>
