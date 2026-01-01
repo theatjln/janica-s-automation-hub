@@ -84,7 +84,7 @@ const projects: Project[] = [
     description: "AI-powered content transformation for multi-platform distribution.",
     impact: "3x content output",
     image: zapierAiContent,
-    videoUrl: "https://drive.google.com/file/d/1FxhnTlYAg3NcBjfLhaTO5birNIFdTpzQ/view?usp=sharing",
+    videoUrl: "https://drive.google.com/file/d/1FxhnTlYAg3NcBjfLhaTO5birNIFdTpzQ/preview",
     techStack: ["Zapier", "AI/GPT", "Content Marketing"],
     isAiFocused: true,
   },
