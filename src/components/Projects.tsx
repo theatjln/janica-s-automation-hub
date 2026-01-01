@@ -207,7 +207,7 @@ const projects: Project[] = [
     impact: "Full responsive portfolio",
     image: wordpressElementorPortfolio,
     liveUrl: "https://automatewithnica.elementfx.com/",
-    techStack: ["WordPress", "Elementor", "Responsive Design", "Contact Forms"],
+    techStack: ["WordPress", "Elementor", "Responsive Design"],
   },
 ];
 
