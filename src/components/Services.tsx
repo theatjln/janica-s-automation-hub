@@ -56,12 +56,6 @@ const services = [
     tools: ["Payment Processing", "SaaS", "Troubleshooting"],
   },
   {
-    icon: Settings,
-    title: "Google Apps Script",
-    description: "Automate Google Workspace workflows with custom scripts for data entry, notifications, and reports.",
-    tools: ["Google Sheets", "Gmail", "Drive", "Calendar"],
-  },
-  {
     icon: Mail,
     title: "Admin & VA Services",
     description: "Comprehensive virtual assistant support including email management, scheduling, and data organization.",
