@@ -49,18 +49,24 @@ const services = [
     description: "I connect and automate your apps, platforms, and payment systems by integrating APIs, setting up Stripe payment flows, and building custom connections—ensuring seamless data transfer and smooth online transactions.",
     tools: ["Stripe", "REST APIs","Webhooks","custom scripts (JavaScript)"],
   }, 
-  {
-    icon: Smartphone,
-    title: "FinTech Support",
-    description: "Expert e-payments support with 98% first-contact resolution. Top 1% in quality and empathy metrics.",
-    tools: ["Payment Processing", "SaaS", "Troubleshooting"],
-  },
-  {
-    icon: Mail,
-    title: "Admin & VA Services",
-    description: "Comprehensive virtual assistant support including email management, scheduling, and data organization.",
-    tools: ["Email", "Calendar", "Research", "Data Entry"],
-  },
+  // {
+  //   icon: Smartphone,
+  //   title: "FinTech Support",
+  //   description: "Expert e-payments support with 98% first-contact resolution. Top 1% in quality and empathy metrics.",
+  //   tools: ["Payment Processing", "SaaS", "Troubleshooting"],
+  // },
+  // {
+  //   icon: Settings,
+  //   title: "Google Apps Script",
+  //   description: "Automate Google Workspace workflows with custom scripts for data entry, notifications, and reports.",
+  //   tools: ["Google Sheets", "Gmail", "Drive", "Calendar"],
+  // },
+  // {
+  //   icon: Mail,
+  //   title: "Admin & VA Services",
+  //   description: "Comprehensive virtual assistant support including email management, scheduling, and data organization.",
+  //   tools: ["Email", "Calendar", "Research", "Data Entry"],
+  // },
 ];
 
 export const Services = () => {
