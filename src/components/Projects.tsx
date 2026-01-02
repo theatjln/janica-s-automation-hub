@@ -132,7 +132,7 @@ const projects: Project[] = [
     description: "Automated financial report delivery from Xero accounting to Asana tasks.",
     impact: "Eliminated manual reporting",
     image: makeXeroAsana,
-    videoUrl: "https://drive.google.com/file/d/1snedS7yHxogTDijkxGJkCM5ZWEFol0m-/preview",
+    videoUrl: "https://drive.google.com/file/d/1T2mDAsx4LUT9vLbeOiI23idw872mRnBy/preview",
     techStack: ["Make.com", "Xero", "Asana"],
   },
   {
