@@ -17,7 +17,7 @@ const services = [
     icon: HandHelping,
     title: "Technical Virtual Assistance",
     description: "I help founders and online businesses manage websites, automate workflows, and handle technical systems so their operations run smoothly without stress.",
-    tools: ["WordPress", "Elementor", "Zapier", "N8n", "Make (Integromat)", "Google Workspace", "Notion", "Airtable", "Stripe", "Slack", "basic HTML/CSS/JavaScript"],
+    tools: ["WordPress", "Elementor", "Zapier", "N8n", "Make (Integromat)", "Airtable", "Stripe", "Slack", "basic HTML/CSS/JavaScript"],
   },
   {
     icon: Workflow,
