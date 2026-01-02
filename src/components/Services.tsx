@@ -7,46 +7,48 @@ import {
   Globe,
   Smartphone,
   Settings,
-  Mail
+  Mail,
+  HandHelping,
+  Layout
 } from "lucide-react";
 
 const services = [
   {
+    icon: HandHelping,
+    title: "Technical Virtual Assistance",
+    description: "I help founders and online businesses manage websites, automate workflows, and handle technical systems so their operations run smoothly without stress.",
+    tools: ["WordPress", "Elementor", "Zapier", "N8n", "Make (Integromat)", "Google Workspace", "Notion", "Airtable", "Stripe", "Slack", "basic HTML/CSS/JavaScript"],
+  },
+  {
     icon: Workflow,
-    title: "Workflow Automation",
+    title: "No-code Automation with Zapier and other tools",
     description: "Streamline operations using Zapier, Make, and n8n. Reduce manual tasks by 35% with intelligent automation.",
-    tools: ["Zapier", "Make", "n8n"],
+    tools: ["Zapier", "Make", "n8n", "HighLevel"],
   },
   {
-    icon: Code2,
-    title: "Full-Stack Development",
-    description: "Build responsive web applications with React, Node.js, and modern frameworks. Production websites delivered.",
-    tools: ["React", "Node.js", "PHP", "Python"],
+    icon: Layout,
+    title: "WordPress Management (Elementor)",
+    description: "I manage and maintain WordPress websites using Elementor, handling page edits, layout updates, plugin management, performance checks, and basic troubleshooting to keep your site secure, fast, and visually polished.",
+    tools: ["WordPress", "Elementor", "Elementor Pro", "WP Plugins", "HTML/CSS", "basic SEO tools"],
   },
-  {
-    icon: Database,
-    title: "API Integration",
-    description: "Connect systems seamlessly with REST APIs, payment gateways, and social integrations for unified workflows.",
-    tools: ["Zapier", "Make","n8n","REST APIs", "Stripe"],
+    {
+    icon: BarChart3,
+    title: "HighLevel CRM Setup & Optimization",
+    description: "I set up and optimize GoHighLevel CRM by building funnels, automations, pipelines, forms, and integrations that streamline lead management, follow-ups, and client communication.",
+    tools: ["GoHighLevel", "Custom CRM", "Stripe", "webhook integrations"],
   },
   {
     icon: Bot,
-    title: "AI & Prompt Engineering",
-    description: "Leverage AI tools for intelligent data processing, content generation, and automated decision-making.",
-    tools: ["GPT", "Gemini", "AI Agents", "Prompt Design"],
+    title: "Chatbot & AI Automation",
+    description: "I design, implement, and optimize AI-powered chatbots and automation workflows that handle customer inquiries, lead qualification, booking, and repetitive tasks—saving time while delivering consistent, personalized interactions.",
+    tools: ["N8n", "Vapi", "Grok", "ChatGPT", "OpenAI", "webhook integrations"],
   },
   {
-    icon: BarChart3,
-    title: "CRM Management",
-    description: "Optimize customer relationships with HighLevel, and custom CRM solutions with automated notifications.",
-    tools: ["HighLevel", "Custom CRM"],
-  },
-  {
-    icon: Globe,
-    title: "Web Development",
-    description: "Create high-performance websites, reducing bounce rates by 30%.",
-    tools: ["WordPress", "Shopify", "Elementor"],
-  },
+    icon: Database,
+    title: "API & Payment Integration",
+    description: "I connect and automate your apps, platforms, and payment systems by integrating APIs, setting up Stripe payment flows, and building custom connections—ensuring seamless data transfer and smooth online transactions.",
+    tools: ["Stripe", "REST APIs","Webhooks","custom scripts (JavaScript)"],
+  }, 
   {
     icon: Smartphone,
     title: "FinTech Support",
