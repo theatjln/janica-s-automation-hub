@@ -164,7 +164,7 @@ const projects: Project[] = [
     description: "Automated social media content generation with weather-aware personalization.",
     impact: "5x content velocity",
     image: n8nSocialMediaContent,
-    videoUrl: "https://drive.google.com/file/d/1S2U1zy2u1kF8HQzdFfeyz6VceJFdaghx/preview",
+    videoUrl: "https://drive.google.com/file/d/1QBzBtOwsrfwlbplNrbldD5PsYUzSdLhM/preview",
     techStack: ["n8n", "AI", "Facebook API", "OpenWeatherMap"],
     isAiFocused: true,
   },
