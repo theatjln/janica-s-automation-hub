@@ -142,7 +142,7 @@ const projects: Project[] = [
     description: "AI-powered email attachment sorting and organization on Google Drive.",
     impact: "100% organized file system",
     image: makeGmailAttachments,
-    videoUrl: "https://drive.google.com/file/d/1T9zD9_33w2NubfmTSpFnUDEUxDpbDktz/preview",
+    videoUrl: "https://drive.google.com/file/d/1GqNvjI61cL8S0vstC1m2KZH56HrieJFh/preview",
     techStack: ["Make.com", "Gmail", "Google Drive", "Gemini AI"],
     isAiFocused: true,
   },
