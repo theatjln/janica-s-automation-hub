@@ -22,7 +22,7 @@ const services = [
   {
     icon: Workflow,
     title: "No-code Automation with Zapier and other tools",
-    description: "Streamline operations using Zapier, Make, and n8n. Reduce manual tasks by 35% with intelligent automation.",
+    description: "Streamline operations using Zapier, Make, HighLevel Automation, and n8n. Reduce manual tasks by 35% with intelligent automation.",
     tools: ["Zapier", "Make", "n8n", "HighLevel"],
   },
   {
