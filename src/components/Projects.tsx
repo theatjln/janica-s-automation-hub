@@ -44,7 +44,7 @@ const projects: Project[] = [
     description: "Automated email notifications triggered by web form submissions for instant lead response.",
     impact: "Reduced response time by 80%",
     image: zapierWebformNotification,
-    videoUrl: "https://drive.google.com/file/d/1qxrOK8AgD3jRbVwfhysk-drnbywPNkXR/preview",
+    videoUrl: "https://drive.google.com/file/d/14SRYRHg_7XMGmZj1LkseDUxALGOnOsBR/preview",
     techStack: ["Zapier", "Email", "Webforms"],
   },
   {
