@@ -1,84 +1,85 @@
-import { ArrowDown, Sparkles, Zap, Code, Clock } from "lucide-react";
+import { ArrowDown, Sparkles, Zap, Code, Clock, ArrowRight } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 import profilePhoto from "@/assets/profile-photo.png";
 
 export const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
+      {/* Animated background orbs */}
+      <div className="orb w-[600px] h-[600px] bg-primary/20 top-[-200px] left-[-200px]" />
+      <div className="orb w-[500px] h-[500px] bg-tertiary/15 bottom-[-150px] right-[-150px]" style={{ animationDelay: '-5s' }} />
+      <div className="orb w-[400px] h-[400px] bg-secondary/10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" style={{ animationDelay: '-10s' }} />
+      
+      {/* Background Image with overlay */}
       <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20 dark:opacity-10"
         style={{ backgroundImage: `url(${heroBg})` }}
       />
-      {/* Background Elements */}
-      <div className="absolute inset-0 bg-hero-pattern opacity-50" />
-      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-float" />
-      <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-tertiary/10 rounded-full blur-3xl animate-float delay-300" />
       
       {/* Grid Pattern Overlay */}
       <div 
-        className="absolute inset-0 opacity-5"
+        className="absolute inset-0 opacity-[0.03] dark:opacity-[0.05]"
         style={{
           backgroundImage: `linear-gradient(hsl(var(--foreground)) 1px, transparent 1px),
                             linear-gradient(90deg, hsl(var(--foreground)) 1px, transparent 1px)`,
-          backgroundSize: '60px 60px'
+          backgroundSize: '80px 80px'
         }}
       />
 
-      <div className="container mx-auto px-4 pt-24 pb-16 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+      <div className="container mx-auto px-4 pt-28 pb-20 relative z-10">
+        <div className="grid lg:grid-cols-2 gap-16 items-center max-w-7xl mx-auto">
           {/* Text Content */}
           <div className="text-center lg:text-left order-2 lg:order-1">
             {/* Badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-8 animate-fade-in">
+            <div className="inline-flex items-center gap-3 px-5 py-2.5 rounded-full glass-card-subtle mb-10 animate-fade-in">
               <Sparkles className="w-4 h-4 text-primary" />
+              <span className="text-xs font-mono uppercase tracking-wider text-primary">Available for Projects</span>
             </div>
 
             {/* Main Heading */} 
-            <h1 className="text-4xl md:text-5xl lg:text-5xl font-heading font-bold mb-6 animate-fade-in delay-100">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8 animate-fade-in delay-100 leading-[1.1]">
               Technical Virtual
               <br />
-              <span className="gradient-text">Assistant & Developer</span>
+              <span className="gradient-text-animated">Assistant & Developer</span>
             </h1> 
             
             {/* Professional Summary */}
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto lg:mx-0 mb-8 leading-relaxed animate-fade-in delay-200">
-              Hi, I’m Janica — Your <span className="text-secondary font-semibold">Workflow Automation Expert</span>.
-      
-              <span className="text-lg font-medium"><br/> I help busy entrepreneurs and teams automate repetitive tasks, connect tools seamlessly, and reclaim dozens of hours every week — using <span className="text-secondary font-semibold">Zapier, Make, n8n, and custom code</span>.</span>
-
-              <span className="text-lg font-medium"> Years of delivering efficiency gains and rapid, reliable setups.</span>
+            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto lg:mx-0 mb-10 leading-relaxed animate-fade-in delay-200">
+              Hi, I'm <span className="text-foreground font-semibold">Janica</span> — Your{" "}
+              <span className="text-secondary font-semibold">Workflow Automation Expert</span>.
+              <br className="hidden sm:block" />
+              <span className="mt-2 block">
+                I help busy entrepreneurs and teams automate repetitive tasks, connect tools seamlessly, 
+                and reclaim dozens of hours every week — using{" "}
+                <span className="text-primary font-semibold">Zapier, Make, n8n, and custom code</span>.
+              </span>
+              <span className="mt-2 block text-base text-muted-foreground/80">
+                Years of delivering efficiency gains and rapid, reliable setups.
+              </span>
             </p>
 
-
             {/* Stats Row */}
-            <div className="flex flex-wrap justify-center lg:justify-start gap-6 mb-10 animate-fade-in delay-300">
-              <div className="flex items-center gap-2">
-                <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
-                  <Zap className="w-5 h-5 text-primary" />
+            <div className="grid grid-cols-3 gap-4 mb-12 animate-fade-in delay-300">
+              <div className="stat-card text-center">
+                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-3">
+                  <Zap className="w-6 h-6 text-primary" />
                 </div>
-                <div className="text-left">
-                  <p className="text-2xl font-bold text-foreground">35%-50%</p>
-                  <p className="text-xs text-muted-foreground">Tasks Automated</p>
-                </div>
+                <p className="text-2xl md:text-3xl font-bold text-foreground">35-50%</p>
+                <p className="text-xs text-muted-foreground mt-1">Tasks Automated</p>
               </div>
-              <div className="flex items-center gap-2">
-                <div className="w-10 h-10 rounded-lg bg-tertiary/10 flex items-center justify-center">
-                  <Code className="w-5 h-5 text-tertiary" />
+              <div className="stat-card text-center">
+                <div className="w-12 h-12 rounded-xl bg-tertiary/10 flex items-center justify-center mx-auto mb-3">
+                  <Code className="w-6 h-6 text-tertiary" />
                 </div>
-                <div className="text-left">
-                  <p className="text-2xl font-bold text-foreground">30+</p>
-                  <p className="text-xs text-muted-foreground">Tools Connected</p>
-                </div>
+                <p className="text-2xl md:text-3xl font-bold text-foreground">30+</p>
+                <p className="text-xs text-muted-foreground mt-1">Tools Connected</p>
               </div>
-              <div className="flex items-center gap-2">
-                <div className="w-10 h-10 rounded-lg bg-secondary/20 flex items-center justify-center">
-                  <Clock className="w-5 h-5 text-secondary" />
+              <div className="stat-card text-center">
+                <div className="w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center mx-auto mb-3">
+                  <Clock className="w-6 h-6 text-secondary" />
                 </div>
-                <div className="text-left">
-                  <p className="text-2xl font-bold text-foreground">20+</p>
-                  <p className="text-xs text-muted-foreground">Hours/Week Saved</p>
-                </div>
+                <p className="text-2xl md:text-3xl font-bold text-foreground">20+</p>
+                <p className="text-xs text-muted-foreground mt-1">Hours/Week Saved</p>
               </div>
             </div>
 
@@ -86,13 +87,14 @@ export const Hero = () => {
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 animate-fade-in delay-400">
               <a
                 href="#contact"
-                className="btn-hero"
+                className="btn-hero group flex items-center gap-2"
                 onClick={(e) => {
                   e.preventDefault();
                   document.querySelector("#contact")?.scrollIntoView({ behavior: "smooth" });
                 }}
               >
-                Get Your Time Back →
+                Get Your Time Back
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </a>
               <a
                 href="#projects"
@@ -110,15 +112,19 @@ export const Hero = () => {
           {/* Profile Photo */}
           <div className="order-1 lg:order-2 flex justify-center animate-fade-in delay-200">
             <div className="relative">
-              {/* Decorative rings */}
-              <div className="absolute inset-0 rounded-full border-2 border-primary/20 scale-110" />
-              <div className="absolute inset-0 rounded-full border-2 border-tertiary/10 scale-125" />
+              {/* Animated rings */}
+              <div className="absolute inset-0 rounded-full border border-primary/20 scale-110 animate-pulse" />
+              <div className="absolute inset-0 rounded-full border border-tertiary/10 scale-[1.25]" style={{ animationDelay: '1s' }} />
+              <div className="absolute inset-0 rounded-full border border-secondary/10 scale-[1.4]" style={{ animationDelay: '2s' }} />
               
               {/* Glow effect */}
-              <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary/30 to-tertiary/30 blur-2xl scale-110" />
+              <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary/30 via-tertiary/20 to-secondary/30 blur-3xl scale-110 animate-pulse" />
+              
+              {/* Rotating gradient border */}
+              <div className="absolute inset-[-4px] rounded-full bg-gradient-conic from-primary via-tertiary to-primary animate-spin-slow opacity-50" />
               
               {/* Image container */}
-              <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-primary/30 shadow-2xl">
+              <div className="relative w-72 h-72 md:w-80 md:h-80 lg:w-[400px] lg:h-[400px] rounded-full overflow-hidden border-4 border-background shadow-elevated">
                 <img
                   src={profilePhoto}
                   alt="Janica Liz De Guzman - Technical Virtual Assistant"
@@ -126,9 +132,12 @@ export const Hero = () => {
                 />
               </div>
               
-              {/* Floating badge */}
-              <div className="absolute -bottom-2 -right-2 bg-card border border-border px-4 py-2 rounded-full shadow-lg">
-                {/* <span className="text-sm font-semibold text-primary">Open to Work</span> */}
+              {/* Floating elements */}
+              <div className="absolute -top-4 -right-4 glass-card p-3 rounded-xl animate-float shadow-elevated">
+                <Zap className="w-6 h-6 text-primary" />
+              </div>
+              <div className="absolute -bottom-4 -left-4 glass-card p-3 rounded-xl animate-float shadow-elevated" style={{ animationDelay: '-2s' }}>
+                <Code className="w-6 h-6 text-tertiary" />
               </div>
             </div>
           </div>
@@ -142,10 +151,12 @@ export const Hero = () => {
               e.preventDefault();
               document.querySelector("#services")?.scrollIntoView({ behavior: "smooth" });
             }}
-            className="flex flex-col items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
+            className="flex flex-col items-center gap-3 text-muted-foreground hover:text-primary transition-colors group"
           >
-            <span className="text-xs uppercase tracking-widest">Scroll</span>
-            <ArrowDown className="w-4 h-4" />
+            <span className="text-xs font-mono uppercase tracking-widest">Scroll</span>
+            <div className="w-6 h-10 rounded-full border-2 border-current flex items-start justify-center p-2">
+              <div className="w-1.5 h-3 rounded-full bg-current animate-bounce" />
+            </div>
           </a>
         </div>
       </div>

@@ -28,31 +28,40 @@ const tools = [
 
 export const Tools = () => {
   return (
-    <section id="tools" className="py-20 bg-muted/30">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="section-heading">Tools I <span className="text-primary">Use</span></h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
+    <section id="tools" className="py-24 relative overflow-hidden">
+      {/* Subtle gradient background */}
+      <div className="absolute inset-0 bg-gradient-to-b from-muted/30 via-transparent to-muted/30" />
+      
+      <div className="container mx-auto px-4 relative z-10">
+        <div className="text-center mb-16">
+          <p className="section-subheading">Tech Stack</p>
+          <h2 className="section-heading mb-6">
+            Tools I <span className="gradient-text">Use</span>
+          </h2>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Expertise across industry-leading automation, productivity, and development platforms
           </p>
         </div>
         
-        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-6 max-w-4xl mx-auto">
-          {tools.map((tool) => (
+        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-4 md:gap-6 max-w-5xl mx-auto">
+          {tools.map((tool, index) => (
             <div
               key={tool.name}
-              className="group flex flex-col items-center gap-3 p-4 rounded-xl bg-card border border-border/50 hover:border-primary/30 hover:shadow-lg hover:shadow-primary/5 transition-all duration-300"
+              className="group glass-card-subtle p-5 hover:border-primary/30 hover:shadow-glow transition-all duration-300 hover:-translate-y-1"
+              style={{ animationDelay: `${index * 50}ms` }}
             >
-              <div className="w-12 h-12 flex items-center justify-center">
-                <img
-                  src={tool.logo}
-                  alt={`${tool.name} logo`}
-                  className="w-10 h-10 object-contain group-hover:scale-110 transition-transform duration-300"
-                />
+              <div className="flex flex-col items-center gap-4">
+                <div className="w-14 h-14 flex items-center justify-center rounded-xl bg-background/50 group-hover:bg-primary/10 transition-colors">
+                  <img
+                    src={tool.logo}
+                    alt={`${tool.name} logo`}
+                    className="w-10 h-10 object-contain group-hover:scale-110 transition-transform duration-300"
+                  />
+                </div>
+                <span className="text-xs text-center text-muted-foreground group-hover:text-foreground transition-colors font-medium leading-tight">
+                  {tool.name}
+                </span>
               </div>
-              <span className="text-xs text-center text-muted-foreground group-hover:text-foreground transition-colors font-medium">
-                {tool.name}
-              </span>
             </div>
           ))}
         </div>
