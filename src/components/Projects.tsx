@@ -230,7 +230,7 @@ const toolColors: Record<string, string> = {
   n8n: "tool-badge n8n",
   GoHighLevel: "tool-badge gohighlevel",
   WordPress: "tool-badge wordpress",
-  "Web Development": "tool-badge web development",
+  "Web Development": "tool-badge web-development",
 };
 
 export const Projects = () => {
@@ -242,6 +242,7 @@ export const Projects = () => {
     if (activeFilter === "AI-Focused") return project.isAiFocused;
     if (activeFilter === "Make") return project.tool === "Make";
     if (activeFilter === "WordPress") return project.tool === "WordPress";
+    if (activeFilter === "Web Development") return project.tool === "Web Development";
     return project.tool === activeFilter;
   });
 
