@@ -22,6 +22,7 @@ import zapierQuoteFollowup from "@/assets/projects/zapier-quote-followup.png";
 import zapierDailyFollowup from "@/assets/projects/zapier-daily-followup.png";
 import zapierAsanaCrm from "@/assets/projects/zapier-asana-crm.png";
 import wordpressElementorPortfolio from "@/assets/projects/wordpress-elementor-portfolio.png";
+import wordpressComposerPortfolio from "@/assets/projects/wordpress-composer-portfolio.png";
 
 interface Project {
   id: string;
@@ -208,6 +209,16 @@ const projects: Project[] = [
     image: wordpressElementorPortfolio,
     liveUrl: "https://automatewithnica.elementfx.com/",
     techStack: ["WordPress", "Elementor", "Responsive Design"],
+  },
+  {
+    id: "wordpress-composer-portfolio",
+    title: "WordPress – Music Composer Portfolio",
+    tool: "WordPress",
+    description: "Elegant dark-themed portfolio for a film & television music composer featuring work samples, bio, and contact integration.",
+    impact: "Premium composer showcase",
+    image: wordpressComposerPortfolio,
+    liveUrl: "https://artistic-composer-site.onrender.com/",
+    techStack: ["WordPress", "Custom Theme", "Responsive Design"],
   },
 ];
 
