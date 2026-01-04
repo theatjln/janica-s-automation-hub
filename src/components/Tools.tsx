@@ -10,6 +10,13 @@ import gmailLogo from "@/assets/tools/gmail.svg";
 import googledriveLogo from "@/assets/tools/googledrive.svg";
 import xeroLogo from "@/assets/tools/xero.svg";
 import airtableLogo from "@/assets/tools/airtable.svg";
+import githubLogo from "@/assets/tools/github.svg";
+import reactLogo from "@/assets/tools/react.svg";
+import javascriptLogo from "@/assets/tools/javascript.svg";
+import htmlLogo from "@/assets/tools/html.svg";
+import cssLogo from "@/assets/tools/css.svg";
+import clonewebxLogo from "@/assets/tools/clonewebx.png";
+import lovableLogo from "@/assets/tools/lovable.png";
 
 const tools = [
   { name: "Zapier", logo: zapierLogo },
@@ -24,6 +31,13 @@ const tools = [
   { name: "Google Drive", logo: googledriveLogo },
   { name: "Xero", logo: xeroLogo },
   { name: "Airtable", logo: airtableLogo },
+  { name: "GitHub", logo: githubLogo },
+  { name: "React", logo: reactLogo },
+  { name: "JavaScript", logo: javascriptLogo },
+  { name: "HTML5", logo: htmlLogo },
+  { name: "CSS3", logo: cssLogo },
+  { name: "CloneWebX", logo: clonewebxLogo },
+  { name: "Lovable.dev", logo: lovableLogo },
 ];
 
 export const Tools = () => {
