@@ -26,7 +26,7 @@ import wordpressElementorPortfolio from "@/assets/projects/wordpress-elementor-p
 interface Project {
   id: string;
   title: string;
-  tool: "Zapier" | "Make" | "n8n" | "GoHighLevel" | "WordPress";
+  tool: "Zapier" | "Make" | "n8n" | "GoHighLevel" | "WordPress" | "Web Development";
   description: string;
   impact: string;
   image?: string;
