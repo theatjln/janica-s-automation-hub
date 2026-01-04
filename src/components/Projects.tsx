@@ -22,7 +22,7 @@ import zapierQuoteFollowup from "@/assets/projects/zapier-quote-followup.png";
 import zapierDailyFollowup from "@/assets/projects/zapier-daily-followup.png";
 import zapierAsanaCrm from "@/assets/projects/zapier-asana-crm.png";
 import wordpressElementorPortfolio from "@/assets/projects/wordpress-elementor-portfolio.png";
-import wordpressComposerPortfolio from "@/assets/projects/wordpress-composer-portfolio.png";
+import webDevelopmentComposerPortfolio from "@/assets/projects/wordpress-composer-portfolio.png";
 
 interface Project {
   id: string;
@@ -212,11 +212,11 @@ const projects: Project[] = [
   },
   {
     id: "wordpress-composer-portfolio",
-    title: "WordPress – Music Composer Portfolio",
+    title: "Music Composer Portfolio",
     tool: "Web Development",
     description: "Elegant dark-themed portfolio for a film & television music composer featuring work samples, bio, and contact integration.",
     impact: "Premium composer showcase",
-    image: wordpressComposerPortfolio,
+    image: webDevelopmentComposerPortfolio,
     liveUrl: "https://artistic-composer-site.onrender.com/",
     techStack: ["React", "JavaScript", "CSS", "HTML", "Responsive Design"],
   },
@@ -230,6 +230,7 @@ const toolColors: Record<string, string> = {
   n8n: "tool-badge n8n",
   GoHighLevel: "tool-badge gohighlevel",
   WordPress: "tool-badge wordpress",
+  "Web Development": "tool-badge web development",
 };
 
 export const Projects = () => {
