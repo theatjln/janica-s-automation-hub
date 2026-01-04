@@ -213,16 +213,16 @@ const projects: Project[] = [
   {
     id: "wordpress-composer-portfolio",
     title: "WordPress – Music Composer Portfolio",
-    tool: "WordPress",
+    tool: "Web Development",
     description: "Elegant dark-themed portfolio for a film & television music composer featuring work samples, bio, and contact integration.",
     impact: "Premium composer showcase",
     image: wordpressComposerPortfolio,
     liveUrl: "https://artistic-composer-site.onrender.com/",
-    techStack: ["WordPress", "Custom Theme", "Responsive Design"],
+    techStack: ["React", "JavaScript", "CSS", "HTML", "Responsive Design"],
   },
 ];
 
-const filterOptions = ["All", "Zapier", "Make", "n8n", "GoHighLevel", "WordPress", "AI-Focused"];
+const filterOptions = ["All", "Zapier", "Make", "n8n", "GoHighLevel", "WordPress", "Web Development", "AI-Focused"];
 
 const toolColors: Record<string, string> = {
   Zapier: "tool-badge zapier",
