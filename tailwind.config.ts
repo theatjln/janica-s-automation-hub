@@ -14,8 +14,9 @@ export default {
     },
     extend: {
       fontFamily: {
-        heading: ["Sora", "sans-serif"],
-        body: ["Inter", "sans-serif"],
+        heading: ["Outfit", "sans-serif"],
+        body: ["Outfit", "sans-serif"],
+        mono: ["Space Mono", "monospace"],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -70,6 +71,9 @@ export default {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+        xl: "calc(var(--radius) + 4px)",
+        "2xl": "calc(var(--radius) + 8px)",
+        "3xl": "calc(var(--radius) + 16px)",
       },
       keyframes: {
         "accordion-down": {
@@ -88,17 +92,39 @@ export default {
           "0%, 100%": { backgroundPosition: "0% 50%" },
           "50%": { backgroundPosition: "100% 50%" },
         },
+        "glow-pulse": {
+          "0%, 100%": { opacity: "0.5" },
+          "50%": { opacity: "1" },
+        },
+        float: {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-20px)" },
+        },
+        "spin-slow": {
+          from: { transform: "rotate(0deg)" },
+          to: { transform: "rotate(360deg)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         shimmer: "shimmer 2s infinite",
         "border-flow": "border-flow 3s ease infinite",
+        "glow-pulse": "glow-pulse 2s ease-in-out infinite",
+        float: "float 6s ease-in-out infinite",
+        "spin-slow": "spin-slow 20s linear infinite",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-        "hero-pattern": "radial-gradient(ellipse at center, hsl(var(--primary) / 0.1) 0%, transparent 70%)",
+        "hero-pattern": "radial-gradient(ellipse at center, hsl(var(--primary) / 0.15) 0%, transparent 70%)",
+        "mesh-gradient": "var(--gradient-mesh)",
+      },
+      boxShadow: {
+        glow: "var(--shadow-glow)",
+        "glow-secondary": "var(--shadow-glow-secondary)",
+        glass: "var(--shadow-glass)",
+        elevated: "var(--shadow-elevated)",
       },
     },
   },

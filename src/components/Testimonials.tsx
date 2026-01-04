@@ -23,57 +23,52 @@ const testimonials = [
 
 export const Testimonials = () => {
   return (
-    <section id="testimonials" className="py-24 bg-muted/30">
-      <div className="container mx-auto px-4">
+    <section id="testimonials" className="py-28 relative overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-b from-muted/30 via-transparent to-muted/30" />
+      
+      <div className="container mx-auto px-4 relative z-10">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-20">
           <p className="section-subheading">Client Feedback</p>
-          <h2 className="section-heading">
-            What Clients <span className="text-primary">Say</span>
+          <h2 className="section-heading mb-6">
+            What Clients <span className="gradient-text">Say</span>
           </h2>
         </div>
 
         {/* Testimonials Grid */}
-        <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="relative bg-card border border-border/50 rounded-xl p-6 hover:border-primary/30 transition-all duration-300 hover:-translate-y-1"
+              className="relative glass-card-subtle p-8 hover:border-primary/30 transition-all duration-300 hover:-translate-y-2 hover:shadow-elevated"
             >
               {/* Quote Icon */}
-              <div className="absolute -top-3 left-6">
-                <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center">
-                  <Quote className="w-4 h-4 text-primary-foreground" />
+              <div className="absolute -top-4 left-8">
+                <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-tertiary flex items-center justify-center shadow-glow">
+                  <Quote className="w-5 h-5 text-primary-foreground" />
                 </div>
               </div>
 
               {/* Rating */}
-              <div className="flex items-center gap-1 mb-4 pt-4">
+              <div className="flex items-center gap-1 mb-5 pt-4">
                 {Array.from({ length: testimonial.rating }).map((_, i) => (
-                  <Star
-                    key={i}
-                    className="w-4 h-4 fill-primary text-primary"
-                  />
+                  <Star key={i} className="w-4 h-4 fill-secondary text-secondary" />
                 ))}
               </div>
 
               {/* Quote */}
-              <p className="text-muted-foreground text-sm leading-relaxed mb-6 italic">
+              <p className="text-muted-foreground text-sm leading-relaxed mb-8 italic">
                 "{testimonial.quote}"
               </p>
 
               {/* Author */}
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-primary/20 to-tertiary/20 flex items-center justify-center">
-                  <User className="w-5 h-5 text-primary" />
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary/20 to-tertiary/20 flex items-center justify-center">
+                  <User className="w-6 h-6 text-primary" />
                 </div>
                 <div>
-                  <p className="font-heading font-semibold text-sm">
-                    {testimonial.author}
-                  </p>
-                  <p className="text-xs text-muted-foreground">
-                    {testimonial.role}
-                  </p>
+                  <p className="font-bold text-sm">{testimonial.author}</p>
+                  <p className="text-xs text-muted-foreground">{testimonial.role}</p>
                 </div>
               </div>
             </div>

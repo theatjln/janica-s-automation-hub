@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Play, X, ExternalLink, Filter } from "lucide-react";
+import { Play, X, ExternalLink, Filter, Sparkles } from "lucide-react";
 import { Dialog, DialogContent, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 
@@ -234,31 +234,32 @@ export const Projects = () => {
   });
 
   return (
-    <section id="projects" className="py-24 relative">
-      {/* Background Accent */}
-      <div className="absolute right-0 top-1/3 w-1/3 h-1/2 bg-gradient-to-l from-tertiary/5 to-transparent blur-3xl" />
+    <section id="projects" className="py-28 relative overflow-hidden">
+      {/* Background accents */}
+      <div className="orb w-[500px] h-[500px] bg-tertiary/10 -right-48 top-1/4" />
+      <div className="orb w-[400px] h-[400px] bg-secondary/10 -left-32 bottom-1/4" style={{ animationDelay: '-5s' }} />
       
       <div className="container mx-auto px-4 relative z-10">
         {/* Section Header */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-16">
           <p className="section-subheading">Portfolio</p>
-          <h2 className="section-heading">
-            Automation Projects & <span className="text-primary">Live Demos</span>
+          <h2 className="section-heading mb-6">
+            Automation Projects & <span className="gradient-text">Live Demos</span>
           </h2>
-          <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Explore my automation workflows and watch live demos showcasing real-world implementations.
           </p>
         </div>
 
         {/* Filter Buttons */}
-        <div className="flex flex-wrap items-center justify-center gap-2 mb-12">
-          <Filter className="w-4 h-4 text-muted-foreground mr-2" />
+        <div className="flex flex-wrap items-center justify-center gap-2 mb-16">
           {filterOptions.map((filter) => (
             <button
               key={filter}
               onClick={() => setActiveFilter(filter)}
-              className={`filter-btn ${activeFilter === filter ? "active" : ""}`}
+              className={`filter-btn rounded-xl ${activeFilter === filter ? "active" : ""}`}
             >
+              {filter === "AI-Focused" && <Sparkles className="w-3.5 h-3.5 mr-1.5 inline" />}
               {filter}
             </button>
           ))}
@@ -278,11 +279,11 @@ export const Projects = () => {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   loading="lazy"
                 />
                 {/* Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent opacity-60" />
+                <div className="absolute inset-0 bg-gradient-to-t from-card via-card/60 to-transparent opacity-70 group-hover:opacity-90 transition-opacity" />
                 
                 {/* Tool Badge */}
                 <div className="absolute top-3 left-3 z-10">
@@ -294,7 +295,8 @@ export const Projects = () => {
                 {/* AI Badge */}
                 {project.isAiFocused && (
                   <div className="absolute top-3 right-3 z-10">
-                    <span className="tool-badge bg-gradient-to-r from-primary/20 to-tertiary/20 text-primary">
+                    <span className="tool-badge bg-gradient-to-r from-primary/30 to-tertiary/30 text-primary border border-primary/20">
+                      <Sparkles className="w-3 h-3 mr-1" />
                       AI
                     </span>
                   </div>
@@ -303,7 +305,7 @@ export const Projects = () => {
                 {/* Play Button or External Link */}
                 {(project.videoUrl || project.liveUrl) && (
                   <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 z-20">
-                    <div className="w-14 h-14 rounded-full bg-primary/90 flex items-center justify-center transform scale-75 group-hover:scale-100 transition-transform animate-pulse-glow">
+                    <div className="w-16 h-16 rounded-full bg-primary/90 flex items-center justify-center transform scale-75 group-hover:scale-100 transition-transform shadow-glow">
                       {project.liveUrl ? (
                         <ExternalLink className="w-6 h-6 text-primary-foreground" />
                       ) : (
@@ -315,18 +317,15 @@ export const Projects = () => {
               </div>
 
               {/* Content */}
-              <div className="p-4 relative z-10">
-                <h3 className="font-heading font-semibold text-sm mb-1 line-clamp-1 group-hover:text-primary transition-colors">
+              <div className="p-5 relative z-10">
+                <h3 className="font-bold text-sm mb-2 line-clamp-1 group-hover:text-primary transition-colors">
                   {project.title.replace(`${project.tool} – `, "")}
                 </h3>
-                <p className="text-xs text-muted-foreground line-clamp-2 mb-2">
+                <p className="text-xs text-muted-foreground line-clamp-2 mb-3">
                   {project.description}
                 </p>
                 <div className="flex items-center gap-2">
-                  <span className="text-xs font-medium text-tertiary">{project.impact}</span>
-                  {(project.videoUrl || project.liveUrl) && (
-                    <ExternalLink className="w-3 h-3 text-muted-foreground" />
-                  )}
+                  <span className="text-xs font-semibold text-tertiary">{project.impact}</span>
                 </div>
               </div>
             </div>
@@ -336,7 +335,7 @@ export const Projects = () => {
 
       {/* Project Modal */}
       <Dialog open={!!selectedProject} onOpenChange={() => setSelectedProject(null)}>
-        <DialogContent className="max-w-5xl max-h-[90vh] overflow-y-auto p-0 gap-0">
+        <DialogContent className="max-w-5xl max-h-[90vh] overflow-y-auto p-0 gap-0 glass-card border-border/50">
           <VisuallyHidden>
             <DialogTitle>{selectedProject?.title || "Project Details"}</DialogTitle>
             <DialogDescription>{selectedProject?.description || "Project details and demo video"}</DialogDescription>
@@ -367,24 +366,24 @@ export const Projects = () => {
               </div>
 
               {/* Content Side */}
-              <div className="p-6 flex flex-col">
-                <div className="mb-4">
-                  <h3 className="text-xl font-heading font-bold mb-2">
+              <div className="p-8 flex flex-col">
+                <div className="mb-6">
+                  <h3 className="text-2xl font-bold mb-3">
                     {selectedProject.title}
                   </h3>
-                  <p className="text-muted-foreground text-sm mb-4">
+                  <p className="text-muted-foreground mb-6">
                     {selectedProject.description}
                   </p>
-                  <div className="flex items-center gap-2 mb-4">
+                  <div className="flex items-center gap-3 mb-6">
                     <span className="text-sm font-semibold text-primary">Impact:</span>
-                    <span className="text-sm text-tertiary">{selectedProject.impact}</span>
+                    <span className="text-sm font-medium text-tertiary">{selectedProject.impact}</span>
                   </div>
                   {selectedProject.liveUrl && (
                     <a
                       href={selectedProject.liveUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 text-sm text-primary hover:underline mb-4"
+                      className="inline-flex items-center gap-2 text-sm text-primary hover:underline mb-6 font-medium"
                     >
                       <ExternalLink className="w-4 h-4" />
                       Visit Live Site
@@ -394,10 +393,10 @@ export const Projects = () => {
 
                 {/* Video Embed */}
                 {selectedProject.videoUrl && (
-                  <div className="flex-1 min-h-[200px] mb-4">
+                  <div className="flex-1 min-h-[200px] mb-6 rounded-xl overflow-hidden">
                     <iframe
                       src={selectedProject.videoUrl}
-                      className="w-full h-full rounded-lg"
+                      className="w-full h-full"
                       allow="autoplay; encrypted-media"
                       allowFullScreen
                       title={`${selectedProject.title} Demo`}
@@ -407,12 +406,12 @@ export const Projects = () => {
 
                 {/* Tech Stack */}
                 <div>
-                  <p className="text-xs text-muted-foreground mb-2">Tech Stack</p>
+                  <p className="text-xs text-muted-foreground mb-3 font-mono uppercase tracking-wider">Tech Stack</p>
                   <div className="flex flex-wrap gap-2">
                     {selectedProject.techStack.map((tech) => (
                       <span
                         key={tech}
-                        className="text-xs px-3 py-1 rounded-full bg-muted text-foreground"
+                        className="text-xs px-3 py-1.5 rounded-full bg-muted text-foreground font-medium"
                       >
                         {tech}
                       </span>

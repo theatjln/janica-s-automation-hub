@@ -1,83 +1,6 @@
 import { useState } from "react";
-import { ChevronDown, MapPin, Calendar, ExternalLink } from "lucide-react";
+import { ChevronDown, MapPin, Calendar, ExternalLink, Briefcase, GraduationCap, Award } from "lucide-react";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
-
-// const experiences = [
-//   {
-//     title: "Workflow Automation Specialist",
-//     company: "Freelance",
-//     location: "Remote",
-//     period: "October 2025 – Present",
-//     duration: "3 months",
-//     highlights: [
-//       "Automated complex workflows using Zapier, Make, and n8n to streamline operations in sales, HR, and CRM systems, reducing manual tasks by 35% to 50%.",
-//       "Integrated AI tools for intelligent data processing, notifications, and analytics, enhancing efficiency and decision-making.",
-//       "Optimized manual operations and implemented CRM tweaks that minimized data entry by 35%.",
-//     ],
-//   },
-//   {
-//     title: "E-payments Account Specialist",
-//     company: "TDCX (FinTech SaaS)",
-//     location: "Kuala Lumpur, Malaysia",
-//     period: "October 2023 – October 2025",
-//     duration: "2 years",
-//     highlights: [
-//       "Provided expert technical support and client onboarding via chat, email, and calls, achieving 98% first-contact resolution while ranking in the top 1% for solution quality and client empathy.",
-//       "Created internal JavaScript-based tools, macros, and support tasks to improve efficiency by 25% and significantly reduce escalation volumes.",
-//       "Earned Hall of Famer awards for 100% UIQ in Product Support Onboarding (December 2024, October 2024, May 2024).",
-//       "Advocated customer feedback for product evolution and suggested UX/API improvements.",
-//     ],
-//   },
-//   {
-//     title: "Automation and CRM Management Specialist",
-//     company: "HomeBased (Freelance Web Developer)",
-//     location: "Remote",
-//     period: "December 2022 – Present",
-//     duration: "3 years",
-//     highlights: [
-//       "Managed CRM systems with automations for notifications via email, SMS, and social networks.",
-//       "Designed and shipped websites using React, WordPress, and Shopify, emphasizing responsive UI and performance optimization.",
-//       "Optimized for SEO and reduced bounce rates by 30% through automated QR payments and email automations.",
-//     ],
-//   },
-//   {
-//     title: "Virtual Assistant",
-//     company: "Pineapple Virtual Assistant Hub Agency",
-//     location: "Remote",
-//     period: "February 2023 – October 2023",
-//     duration: "8 months",
-//     highlights: [
-//       "Enhanced Shopify websites for better user experience and functionality using automation tools.",
-//       "Conducted extensive web research on diverse topics to deliver insightful analyses.",
-//       "Scheduled, managed, and automated email campaigns to increase engagement and sales.",
-//       "Created visually appealing marketing content, including graphics and multimedia with Canva.",
-//     ],
-//   },
-//   {
-//     title: "API Integration Developer",
-//     company: "Freelance",
-//     location: "Remote",
-//     period: "February 2019 – October 2023",
-//     duration: "4 years 9 months",
-//     highlights: [
-//       "Integrated APIs (Twitter, Facebook, Stripe Gateway, SMS Messaging) into web applications for seamless functionality.",
-//       "Developed full-stack solutions with Node.js, Express, React, and databases like Supabase.",
-//       "Collaborated on MVP development, ensuring API-driven features for payment processing and social integrations.",
-//     ],
-//   },
-//   {
-//     title: "Full-Stack Developer",
-//     company: "F-Squared, Inc.",
-//     location: "Davao, Philippines",
-//     period: "June 2018 – January 2019",
-//     duration: "8 months",
-//     highlights: [
-//       "Led a 4-developer team in delivering React and PHP modules, implementing automated tests and code reviews.",
-//       "Mentored junior developers on JavaScript best practices, accessibility, and API handling.",
-//       "Developed full-stack web solutions using React, PHP, and REST APIs, delivering responsive, accessible sites with integrated automations (forms, payments, CRM syncs) for seamless client workflows."
-//     ],
-//   },
-// ];
 
 const experiences = [
   {
@@ -146,19 +69,6 @@ const education = [
   },
 ];
 
-// const certifications = [
-//   "WordPress Web Page Building and Maintenance (Dec 2025)",
-//   "AI Automation with n8n (Dec 2025)",
-//   "HighLevel CRM Full Training (Dec 2025)",
-//   "Prompt Engineering (Nov 2025)",
-//   "No Code Automation with Make.com (Nov 2025)",
-//   "No Code Automation with Zapier (Nov 2025)",
-//   "SQL for Data Analysis (Nov 2025)",
-//   "META React Basics (May 2025)",
-//   "META HTML & CSS In-Depth (May 2025)",
-//   "CEFR EF SET English C2 Proficient (July 2025)",
-// ];
-
 const certifications = [
   {certfificate:"WordPress Web Page Building and Maintenance (Dec 2025)", link: "https://drive.google.com/file/d/1itLvj3nFD9Q0bQBIxPsO5JO1NBLCoHbL/view?usp=sharing"},
   {certfificate:"AI Automation with n8n (Dec 2025)", link: "https://drive.google.com/file/d/1w3yqNnMu8Akz8AM3TIWvP0Cs4X4f51TB/view?usp=sharing"},
@@ -185,19 +95,28 @@ export const Experience = () => {
   };
 
   return (
-    <section id="experience" className="py-24 bg-muted/30">
-      <div className="container mx-auto px-4">
+    <section id="experience" className="py-28 relative overflow-hidden">
+      {/* Subtle gradient background */}
+      <div className="absolute inset-0 bg-gradient-to-b from-muted/30 via-transparent to-muted/30" />
+      
+      <div className="container mx-auto px-4 relative z-10">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-20">
           <p className="section-subheading">My Journey</p>
-          <h2 className="section-heading">
-            Work <span className="text-primary">Experience</span>
+          <h2 className="section-heading mb-6">
+            Work <span className="gradient-text">Experience</span>
           </h2>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-12">
+        <div className="grid lg:grid-cols-3 gap-12 max-w-7xl mx-auto">
           {/* Experience Timeline */}
           <div className="lg:col-span-2">
+            <div className="flex items-center gap-3 mb-8">
+              <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
+                <Briefcase className="w-5 h-5 text-primary" />
+              </div>
+              <h3 className="text-xl font-bold">Professional Experience</h3>
+            </div>
             <div className="space-y-4">
               {experiences.map((exp, index) => (
                 <Collapsible
@@ -205,36 +124,34 @@ export const Experience = () => {
                   open={openItems.includes(index)}
                   onOpenChange={() => toggleItem(index)}
                 >
-                  <div className="bg-card border border-border/50 rounded-xl overflow-hidden hover:border-primary/30 transition-colors">
+                  <div className="glass-card-subtle hover:border-primary/30 transition-all duration-300">
                     <CollapsibleTrigger className="w-full p-6 text-left flex items-start justify-between gap-4">
                       <div className="flex-1">
-                        <div className="flex flex-wrap items-center gap-2 mb-2">
-                          <h3 className="text-lg font-heading font-semibold text-foreground">
+                        <div className="flex flex-wrap items-center gap-3 mb-3">
+                          <h4 className="text-lg font-bold text-foreground">
                             {exp.title}
-                          </h3>
-                          <span className="text-xs px-2 py-1 rounded-full bg-primary/10 text-primary">
+                          </h4>
+                          <span className="text-xs px-3 py-1 rounded-full bg-primary/10 text-primary font-semibold">
                             {exp.duration}
                           </span>
                         </div>
                         <div className="flex flex-wrap items-center gap-4 text-sm text-muted-foreground">
-                          <span className="font-medium text-tertiary">{exp.company}</span>
+                          <span className="font-semibold text-tertiary">{exp.company}</span>
                           {exp.location && (
-                            <span className="flex items-center gap-1">
-                              <MapPin className="w-3 h-3" />
+                            <span className="flex items-center gap-1.5">
+                              <MapPin className="w-3.5 h-3.5" />
                               {exp.location}
                             </span>
                           )}
-                          <span className="flex items-center gap-1">
-                            <Calendar className="w-3 h-3" />
+                          <span className="flex items-center gap-1.5">
+                            <Calendar className="w-3.5 h-3.5" />
                             {exp.period}
                           </span>
                         </div>
                       </div>
-                      <ChevronDown
-                        className={`w-5 h-5 text-muted-foreground transition-transform ${
-                          openItems.includes(index) ? "rotate-180" : ""
-                        }`}
-                      />
+                      <div className={`w-8 h-8 rounded-lg bg-muted/50 flex items-center justify-center transition-transform ${openItems.includes(index) ? "rotate-180" : ""}`}>
+                        <ChevronDown className="w-4 h-4 text-muted-foreground" />
+                      </div>
                     </CollapsibleTrigger>
                     <CollapsibleContent>
                       <div className="px-6 pb-6">
@@ -244,7 +161,7 @@ export const Experience = () => {
                               key={i}
                               className="flex items-start gap-3 text-sm text-muted-foreground"
                             >
-                              <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0" />
+                              <span className="w-2 h-2 rounded-full bg-gradient-to-r from-primary to-tertiary mt-2 shrink-0" />
                               {highlight}
                             </li>
                           ))}
@@ -260,24 +177,26 @@ export const Experience = () => {
           {/* Education & Certifications Sidebar */}
           <div className="space-y-8">
             {/* Education */}
-            <div className="bg-card border border-border/50 rounded-xl p-6">
-              <h3 className="text-lg font-heading font-semibold mb-4 flex items-center gap-2">
-                <span className="w-2 h-2 rounded-full bg-tertiary" />
-                Education
-              </h3>
-              <div className="space-y-4">
+            <div className="glass-card-subtle p-6">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-10 h-10 rounded-xl bg-tertiary/10 flex items-center justify-center">
+                  <GraduationCap className="w-5 h-5 text-tertiary" />
+                </div>
+                <h3 className="text-lg font-bold">Education</h3>
+              </div>
+              <div className="space-y-6">
                 {education.map((edu, index) => (
-                  <div key={index} className="border-l-2 border-tertiary/30 pl-4">
-                    <p className="font-medium text-foreground text-sm">{edu.degree}</p>
-                    <p className="text-xs text-tertiary">{edu.institution}</p>
-                    <p className="text-xs text-muted-foreground">{edu.year}</p>
+                  <div key={index} className="relative pl-5 border-l-2 border-tertiary/30">
+                    <p className="font-semibold text-foreground text-sm">{edu.degree}</p>
+                    <p className="text-xs text-tertiary font-medium mt-1">{edu.institution}</p>
+                    <p className="text-xs text-muted-foreground mt-0.5">{edu.year}</p>
                     {edu.thesis && (
-                      <p className="text-xs text-muted-foreground mt-1 italic">
+                      <p className="text-xs text-muted-foreground mt-2 italic leading-relaxed">
                         Thesis: {edu.thesis}
                       </p>
                     )}
                     {edu.grade && (
-                      <p className="text-xs text-primary mt-1">Grade: {edu.grade}</p>
+                      <p className="text-xs text-primary mt-1 font-semibold">Grade: {edu.grade}</p>
                     )}
                   </div>
                 ))}
@@ -285,22 +204,24 @@ export const Experience = () => {
             </div>
 
             {/* Certifications */}
-            <div className="bg-card border border-border/50 rounded-xl p-6">
-              <h3 className="text-lg font-heading font-semibold mb-4 flex items-center gap-2">
-                <span className="w-2 h-2 rounded-full bg-primary" />
-                Certifications
-              </h3>
-              <div className="space-y-2 max-h-64 overflow-y-auto pr-2">
+            <div className="glass-card-subtle p-6">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
+                  <Award className="w-5 h-5 text-primary" />
+                </div>
+                <h3 className="text-lg font-bold">Certifications</h3>
+              </div>
+              <div className="space-y-3 max-h-72 overflow-y-auto pr-2">
                 {certifications.map((cert, index) => (
                   <a
                     href={cert.link}
                     target="_blank"
                     rel="noopener noreferrer"
                     key={index}
-                    className="flex items-start gap-2 text-xs text-muted-foreground"
+                    className="group flex items-start gap-3 text-xs text-muted-foreground hover:text-primary transition-colors p-2 rounded-lg hover:bg-primary/5"
                   >
-                    <ExternalLink className="w-3 h-3 mt-0.5 text-primary shrink-0" />
-                    {cert.certfificate}
+                    <ExternalLink className="w-3.5 h-3.5 mt-0.5 text-primary shrink-0 group-hover:scale-110 transition-transform" />
+                    <span className="leading-relaxed">{cert.certfificate}</span>
                   </a>
                 ))}
               </div>
