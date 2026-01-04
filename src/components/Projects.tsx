@@ -219,6 +219,7 @@ const projects: Project[] = [
     image: webDevelopmentComposerPortfolio,
     liveUrl: "https://artistic-composer-site.onrender.com/",
     techStack: ["React", "JavaScript", "CSS", "HTML", "Responsive Design"],
+    isAiFocused: true,
   },
 ];
 
