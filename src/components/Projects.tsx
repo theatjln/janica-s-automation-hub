@@ -211,7 +211,7 @@ const projects: Project[] = [
     techStack: ["WordPress", "Elementor", "Responsive Design"],
   },
   {
-    id: "wordpress-composer-portfolio",
+    id: "composer-portfolio",
     title: "Music Composer Portfolio",
     tool: "Web Development",
     description: "Elegant dark-themed portfolio for a film & television music composer featuring work samples, bio, and contact integration.",
