@@ -49,24 +49,30 @@ const services = [
     description: "I connect and automate your apps, platforms, and payment systems by integrating APIs, setting up Stripe payment flows, and building custom connections—ensuring seamless data transfer and smooth online transactions.",
     tools: ["Stripe", "REST APIs","Webhooks","custom scripts (JavaScript)"],
   }, 
-  // {
-  //   icon: Smartphone,
-  //   title: "FinTech Support",
-  //   description: "Expert e-payments support with 98% first-contact resolution. Top 1% in quality and empathy metrics.",
-  //   tools: ["Payment Processing", "SaaS", "Troubleshooting"],
-  // },
-  // {
-  //   icon: Settings,
-  //   title: "Google Apps Script",
-  //   description: "Automate Google Workspace workflows with custom scripts for data entry, notifications, and reports.",
-  //   tools: ["Google Sheets", "Gmail", "Drive", "Calendar"],
-  // },
-  // {
-  //   icon: Mail,
-  //   title: "Admin & VA Services",
-  //   description: "Comprehensive virtual assistant support including email management, scheduling, and data organization.",
-  //   tools: ["Email", "Calendar", "Research", "Data Entry"],
-  // },
+  {
+    icon: Smartphone,
+    title: "FinTech Support",
+    description: "Expert e-payments support with 98% first-contact resolution. Top 1% in quality and empathy metrics.",
+    tools: ["Payment Processing", "SaaS", "Troubleshooting"],
+  },
+  {
+    icon: Code2,
+    title: "Basic Web Development with AI and custom code",
+    description: "AI-assisted front-end features and quick builds using HTML, CSS, and React/JavaScript to enhance website functionality and user experience.",
+    tools: ["React", "JavaScript", "HTML", "CSS"],
+  },
+  {
+    icon: Mail,
+    title: "Customer Support and Technical Support",
+    description: "Email, chat, and CRM-based support with a focus on technical issues, ensuring timely and effective resolutions.",
+    tools: ["Slack", "Email", "Trello", "Asana", "Salesforce", "Twilio"],
+  },
+{
+    icon: Globe,
+    title: "Ongoing Support & Monthly Retainers",
+    description: "Continuous optimization and technical assistance to ensure your systems run smoothly and adapt to evolving business needs.",
+    tools: ["Zapier", "Make", "n8n", "HighLevel CRM", "WordPress (Elementor)", "Google Analytics", "Trello", "Asana", "Slack", "Email"],
+  },
 ];
 
 export const Services = () => {
