@@ -50,7 +50,7 @@ export const Hero = () => {
             
             
             {/* Professional Summary */}
-            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto lg:mx-0 mb-10 leading-relaxed animate-fade-in delay-200">
+            {/* <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto lg:mx-0 mb-10 leading-relaxed animate-fade-in delay-200">
               Hi, I'm <span className="text-foreground font-semibold">Janica</span> — Your{" "}
               <span className="text-secondary font-semibold">Workflow Automation Expert</span>.
               <br className="hidden sm:block" />
@@ -62,7 +62,17 @@ export const Hero = () => {
               <span className="mt-2 block text-base text-muted-foreground/80">
                 Years of delivering efficiency gains and rapid, reliable setups.
               </span>
+            </p> */}
+            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto lg:mx-0 mb-10 leading-relaxed animate-fade-in delay-200">
+              Hi, I'm <span className="text-foreground font-semibold">Janica</span> — Your{" "}
+              <span className="text-secondary font-semibold">Workflow Automation Expert</span>.
+              <br className="hidden sm:block" />
+              <span className="mt-2 block">
+                Helping service businesses automate leads, CRM workflows, and website operations — using{" "}
+                <span className="text-primary font-semibold">WordPress Elementor, Zapier, Make, n8n, and custom code</span>.
+              </span> 
             </p>
+
 
             {/* Stats Row */}
             <div className="grid grid-cols-3 gap-4 mb-12 animate-fade-in delay-300">
