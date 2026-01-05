@@ -56,12 +56,12 @@ const services = [
     tools: ["Stripe", "REST APIs","Webhooks","custom scripts (JavaScript)"],
     gradient: "from-tertiary/20 to-primary/20",
   },  
-  {
-    icon: Smartphone,
-    title: "FinTech Support",
-    description: "Expert e-payments support with 98% first-contact resolution. Top 1% in quality and empathy metrics.",
-    tools: ["Payment Processing", "SaaS", "Troubleshooting"],
-  },
+  // {
+  //   icon: Smartphone,
+  //   title: "FinTech Support",
+  //   description: "Expert e-payments support with 98% first-contact resolution. Top 1% in quality and empathy metrics.",
+  //   tools: ["Payment Processing", "SaaS", "Troubleshooting"],
+  // },
   {
     icon: Code2,
     title: "Basic Web Development with AI and custom code",
