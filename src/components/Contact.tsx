@@ -1,4 +1,4 @@
-import { Mail, MapPin, Phone, Linkedin, Facebook, Instagram, Twitter, Youtube, MessageCircle, ArrowRight } from "lucide-react";
+import { Mail, MapPin, Phone, Linkedin, Facebook, Instagram, Twitter, Youtube, MessageCircle, ArrowRight, Briefcase, Laptop } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export const Contact = () => {
@@ -28,8 +28,9 @@ export const Contact = () => {
               <h3 className="text-2xl font-bold mb-10 text-center">
                 Contact Information
               </h3>
+
               <div className="grid sm:grid-cols-2 gap-6 mb-12">
-                <a
+                {/* <a
                   href="mailto:janicalizdeguzman@gmail.com"
                   className="group glass-card-subtle p-8 hover:border-primary/30 transition-all hover:-translate-y-1 hover:shadow-elevated"
                 >
@@ -44,9 +45,45 @@ export const Contact = () => {
                       </p>
                     </div>
                   </div>
+                </a> */}
+
+                <a
+                  href="https://www.upwork.com/freelancers/~01770f2b271f27b901?mp_source=share"
+                  className="group glass-card-subtle p-8 hover:border-primary/30 transition-all hover:-translate-y-1 hover:shadow-elevated"
+                >
+                  <div className="flex flex-col items-center gap-5">
+                    <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-secondary/20 to-secondary/10 flex items-center justify-center group-hover:scale-110 transition-transform">
+                      <Briefcase className="w-8 h-8 text-secondary" />
+                    </div>
+                    <div className="text-center">
+                      <p className="text-sm text-muted-foreground mb-1">Upwork</p>
+                      {/* <p className="font-semibold text-lg group-hover:text-primary transition-colors">
+                         janicalizdeguzman@gmail.com 
+                      </p> */}
+                    </div>
+                  </div>
                 </a>
 
-                <a 
+               <a 
+                  href="https://www.onlinejobs.ph/jobseekers/info/626518"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group glass-card-subtle p-8 hover:border-tertiary/30 transition-all hover:-translate-y-1 hover:shadow-elevated"
+                >
+                  <div className="flex flex-col items-center gap-5">
+                    <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-tertiary/20 to-tertiary/10 flex items-center justify-center group-hover:scale-110 transition-transform">
+                      <Laptop className="w-8 h-8 text-tertiary" />
+                    </div>
+                    <div className="text-center">
+                      {/* <p className="text-sm text-muted-foreground mb-1">WhatsApp</p> */}
+                      {/* <p className="font-semibold text-lg group-hover:text-tertiary transition-colors">
+                        +60 133 864 886
+                      </p> */}
+                    </div>
+                  </div>
+                </a> 
+
+                {/* <a 
                   href="https://wa.me/60133864886"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -63,7 +100,9 @@ export const Contact = () => {
                       </p>
                     </div>
                   </div>
-                </a>
+                </a> */}
+
+                
 
                 <a
                   href="tel:+639958633866"
@@ -94,6 +133,8 @@ export const Contact = () => {
                   </div>
                 </div>
               </div>
+
+
             </div>
 
             {/* Social Links */}
