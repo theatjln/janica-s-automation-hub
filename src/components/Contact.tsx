@@ -143,7 +143,7 @@ export const Contact = () => {
               <h4 className="text-lg font-semibold mb-8">Follow Me</h4>
               <div className="flex items-center justify-center gap-4">
                 {[
-                  { href: "https://www.linkedin.com/in/nica-de-guzman-a01270262/", icon: Linkedin },
+                  { href: "www.linkedin.com/in/janica-liz-d-2387231a2", icon: Linkedin },
                   { href: "https://www.facebook.com/profile.php?id=61583945082101", icon: Facebook },
                   { href: "https://www.youtube.com/@automatewithnica", icon: Youtube },
                   { href: "https://www.instagram.com/automatewithnica/", icon: Instagram },
