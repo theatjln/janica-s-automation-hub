@@ -65,9 +65,10 @@ export const Hero = () => {
             </p> */}
 
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto lg:mx-0 mb-10 leading-relaxed animate-fade-in delay-200">
-              Hi, I'm <span className="text-foreground font-semibold">Janica</span> — Your{" "}
+              Hi, I'm <span className="text-foreground font-semibold">Janica</span>
+               {/* — Your{" "}
               <span className="text-secondary font-semibold">Workflow Automation Expert</span>,
-              <br className="hidden sm:block" />
+              <br className="hidden sm:block" /> */}
               <span className="mt-2 block">
                 helping service businesses automate leads, CRM workflows, and website operations — using{" "}
               <span className="text-primary font-semibold">Zapier, Make, n8n, GoHighLevel, custom code and WordPress Elementor</span>.
