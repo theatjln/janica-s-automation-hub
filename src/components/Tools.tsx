@@ -18,26 +18,39 @@ import cssLogo from "@/assets/tools/css.svg";
 // import clonewebxLogo from "@/assets/tools/clonewebx.png";
 import lovableLogo from "@/assets/tools/lovable.png";
 
-const tools = [
-  { name: "Zapier", logo: zapierLogo },
-  { name: "Make.com", logo: makeLogo },
-  { name: "n8n", logo: n8nLogo },
-  { name: "GoHighLevel", logo: gohighlevelLogo },
-  { name: "WordPress", logo: wordpressLogo },
-  { name: "Elementor", logo: elementorLogo },
-  { name: "Asana", logo: asanaLogo },
-  { name: "Slack", logo: slackLogo },
-  { name: "Gmail / Google Workspace", logo: gmailLogo },
-  { name: "Google Drive", logo: googledriveLogo },
-  { name: "Xero", logo: xeroLogo },
-  { name: "Airtable", logo: airtableLogo },
-  { name: "GitHub", logo: githubLogo },
-  { name: "React", logo: reactLogo },
-  { name: "JavaScript", logo: javascriptLogo },
-  { name: "HTML5", logo: htmlLogo },
-  { name: "CSS3", logo: cssLogo },
-  // { name: "CloneWebX", logo: clonewebxLogo },
-  // { name: "Lovable.dev", logo: lovableLogo },
+const toolCategories = [
+  {
+    name: "Web Development",
+    tools: [
+      { name: "WordPress", logo: wordpressLogo },
+      { name: "Elementor", logo: elementorLogo },
+      { name: "React", logo: reactLogo },
+      { name: "JavaScript", logo: javascriptLogo },
+      { name: "HTML5", logo: htmlLogo },
+      { name: "CSS3", logo: cssLogo },
+    ],
+  },
+  {
+    name: "Automation",
+    tools: [
+      { name: "Zapier", logo: zapierLogo },
+      { name: "Make.com", logo: makeLogo },
+      { name: "n8n", logo: n8nLogo },
+      { name: "GoHighLevel", logo: gohighlevelLogo },
+    ],
+  },
+  {
+    name: "Operations & Productivity",
+    tools: [
+      { name: "Gmail / Google Workspace", logo: gmailLogo },
+      { name: "Google Drive", logo: googledriveLogo },
+      { name: "Slack", logo: slackLogo },
+      { name: "Asana", logo: asanaLogo },
+      { name: "Airtable", logo: airtableLogo },
+      { name: "Xero", logo: xeroLogo },
+      { name: "GitHub", logo: githubLogo },
+    ],
+  },
 ];
 
 export const Tools = () => {
@@ -57,24 +70,34 @@ export const Tools = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-4 md:gap-6 max-w-5xl mx-auto">
-          {tools.map((tool, index) => (
-            <div
-              key={tool.name}
-              className="group glass-card-subtle p-5 hover:border-primary/30 hover:shadow-glow transition-all duration-300 hover:-translate-y-1"
-              style={{ animationDelay: `${index * 50}ms` }}
-            >
-              <div className="flex flex-col items-center gap-4">
-                <div className="w-14 h-14 flex items-center justify-center rounded-xl bg-background/50 group-hover:bg-primary/10 transition-colors">
-                  <img
-                    src={tool.logo}
-                    alt={`${tool.name} logo`}
-                    className="w-10 h-10 object-contain group-hover:scale-110 transition-transform duration-300"
-                  />
-                </div>
-                <span className="text-xs text-center text-muted-foreground group-hover:text-foreground transition-colors font-medium leading-tight">
-                  {tool.name}
-                </span>
+        <div className="space-y-12 max-w-5xl mx-auto">
+          {toolCategories.map((category) => (
+            <div key={category.name}>
+              <h3 className="text-lg font-semibold text-foreground mb-6 flex items-center gap-3">
+                <span className="w-8 h-[2px] bg-gradient-to-r from-primary to-primary/50" />
+                {category.name}
+              </h3>
+              <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-4 md:gap-6">
+                {category.tools.map((tool, index) => (
+                  <div
+                    key={tool.name}
+                    className="group glass-card-subtle p-5 hover:border-primary/30 hover:shadow-glow transition-all duration-300 hover:-translate-y-1"
+                    style={{ animationDelay: `${index * 50}ms` }}
+                  >
+                    <div className="flex flex-col items-center gap-4">
+                      <div className="w-14 h-14 flex items-center justify-center rounded-xl bg-background/50 group-hover:bg-primary/10 transition-colors">
+                        <img
+                          src={tool.logo}
+                          alt={`${tool.name} logo`}
+                          className="w-10 h-10 object-contain group-hover:scale-110 transition-transform duration-300"
+                        />
+                      </div>
+                      <span className="text-xs text-center text-muted-foreground group-hover:text-foreground transition-colors font-medium leading-tight">
+                        {tool.name}
+                      </span>
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
           ))}
