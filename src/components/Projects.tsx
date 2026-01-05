@@ -225,6 +225,16 @@ interface Project {
 // ];
 
 const projects: Project[] = [
+    {
+    id: "wordpress-elementor-portfolio",
+    title: "WordPress – Elementor Portfolio Website",
+    tool: "WordPress",
+    description: "Showcase your services professionally: fully responsive portfolio with work samples and contact forms to attract new clients effortlessly.",
+    impact: "Full responsive portfolio",
+    image: wordpressElementorPortfolio,
+    liveUrl: "https://automatewithnica.elementfx.com/",
+    techStack: ["WordPress", "Elementor", "Responsive Design"],
+  },
   {
     id: "zapier-webform-notification",
     title: "Zapier – Webform Notification Email",
@@ -386,16 +396,6 @@ const projects: Project[] = [
     impact: "85% lead conversion improvement",
     image: gohighlevelLeadCapture,
     techStack: ["GoHighLevel", "SMS", "Calls", "Contracts"],
-  },
-  {
-    id: "wordpress-elementor-portfolio",
-    title: "WordPress – Elementor Portfolio Website",
-    tool: "WordPress",
-    description: "Showcase your services professionally: fully responsive portfolio with work samples and contact forms to attract new clients effortlessly.",
-    impact: "Full responsive portfolio",
-    image: wordpressElementorPortfolio,
-    liveUrl: "https://automatewithnica.elementfx.com/",
-    techStack: ["WordPress", "Elementor", "Responsive Design"],
   },
   {
     id: "composer-portfolio",
