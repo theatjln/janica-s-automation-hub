@@ -411,7 +411,7 @@ const projects: Project[] = [
 ];
 
 
-const filterOptions = ["All", "Zapier", "Make", "n8n", "GoHighLevel", "WordPress", "Web Development", "AI-Focused"];
+const filterOptions = ["All", "WordPress", "Zapier", "Make", "n8n", "GoHighLevel", "Web Development", "AI-Focused"];
 
 const toolColors: Record<string, string> = {
   Zapier: "tool-badge zapier",
