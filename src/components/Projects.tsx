@@ -27,7 +27,7 @@ import webDevelopmentComposerPortfolio from "@/assets/projects/wordpress-compose
 interface Project {
   id: string;
   title: string;
-  tool: "Zapier" | "Make" | "n8n" | "GoHighLevel" | "WordPress" | "Web Development";
+  tool: "WordPress" | "Zapier" | "Make" | "n8n" | "GoHighLevel" | "Web Development";
   description: string;
   impact: string;
   image?: string;
