@@ -75,6 +75,7 @@ export const Contact = () => {
                       <Laptop className="w-8 h-8 text-tertiary" />
                     </div>
                     <div className="text-center">
+                      <p className="text-sm text-muted-foreground mb-1">Onlinejobs.ph</p>
                       {/* <p className="text-sm text-muted-foreground mb-1">WhatsApp</p> */}
                       {/* <p className="font-semibold text-lg group-hover:text-tertiary transition-colors">
                         +60 133 864 886
