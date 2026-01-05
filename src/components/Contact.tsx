@@ -168,7 +168,7 @@ export const Contact = () => {
               <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-8 text-center">
                 <div>
                   <p className="text-4xl font-bold gradient-text mb-2">7+</p>
-                  <p className="text-sm text-muted-foreground">Technical Experience</p>
+                  <p className="text-sm text-muted-foreground">Years Technical Experience</p>
                 </div>
                 <div>
                   <p className="text-4xl font-bold text-secondary mb-2">35–50%</p>
