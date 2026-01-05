@@ -14,72 +14,93 @@ import {
 } from "lucide-react";
 
 const services = [
-  {
-    icon: HandHelping,
-    title: "Technical Virtual Assistance",
-    description: "I help founders and online businesses manage websites, automate workflows, and handle technical systems so their operations run smoothly without stress.",
-    tools: ["WordPress", "Elementor", "Zapier", "N8n", "Make (Integromat)", "Airtable", "Stripe", "Slack", "basic HTML/CSS/JavaScript"],
-    gradient: "from-primary/20 to-tertiary/20",
-  },
-  {
-    icon: Workflow,
-    title: "No-code Automation with Zapier and other tools",
-    description: "Streamline operations using Zapier, Make, HighLevel Automation, and n8n. Reduce manual tasks by 35% with intelligent automation.",
-    tools: ["Zapier", "Make", "n8n", "HighLevel"],
-    gradient: "from-secondary/20 to-primary/20",
-  },
-  {
+    {
     icon: Layout,
     title: "WordPress Management (Elementor)",
-    description: "I manage and maintain WordPress websites using Elementor, handling page edits, layout updates, plugin management, performance checks, and basic troubleshooting to keep your site secure, fast, and visually polished.",
+    // description: "I manage and maintain WordPress websites using Elementor, handling landing page creation, page edits, layout updates, plugin management, performance checks, and basic troubleshooting to keep your site secure, fast, and visually polished.",
+    description: "I manage landing page creation, site edits & fixes, speed & layout optimization, and form integrations.",
     tools: ["WordPress", "Elementor", "Elementor Pro", "WP Plugins", "HTML/CSS", "basic SEO tools"],
     gradient: "from-tertiary/20 to-secondary/20",
   },
   {
-    icon: BarChart3,
-    title: "HighLevel CRM Setup & Optimization",
-    description: "I set up and optimize GoHighLevel CRM by building funnels, automations, pipelines, forms, and integrations that streamline lead management, follow-ups, and client communication.",
-    tools: ["GoHighLevel", "Custom CRM", "Stripe", "webhook integrations"],
-    gradient: "from-primary/20 to-secondary/20",
+    icon: Workflow,
+    title: "Business Automation & CRM Setup",
+    description: "I make Zapier / Make / n8n workflows, GoHighLevel pipelines & follow-ups, and Forms → CRM → email automations.",
+    tools: ["Zapier", "Make", "n8n", "HighLevel"],
+    gradient: "from-secondary/20 to-primary/20",
   },
   {
-    icon: Bot,
-    title: "Chatbot & AI Automation",
-    description: "I design, implement, and optimize AI-powered chatbots and automation workflows that handle customer inquiries, lead qualification, booking, and repetitive tasks—saving time while delivering consistent, personalized interactions.",
-    tools: ["N8n", "Vapi", "Grok", "ChatGPT", "OpenAI", "webhook integrations"],
-    gradient: "from-secondary/20 to-tertiary/20",
-  },
-  {
-    icon: Database,
-    title: "API & Payment Integration",
-    description: "I connect and automate your apps, platforms, and payment systems by integrating APIs, setting up Stripe payment flows, and building custom connections—ensuring seamless data transfer and smooth online transactions.",
-    tools: ["Stripe", "REST APIs","Webhooks","custom scripts (JavaScript)"],
-    gradient: "from-tertiary/20 to-primary/20",
-  },  
+    icon: Mail,
+    title: "Ongoing Tech VA Support",
+    description: "I do website updates, automation maintenance, and admin support system",
+    tools: ["Slack", "Email", "Trello", "Asana", "Salesforce", "Twilio"],
+  }
+  //   {
+  //   icon: Mail,
+  //   title: "Customer Support and Technical Support",
+  //   description: "Email, chat, and CRM-based support with a focus on technical issues, ensuring timely and effective resolutions.",
+  //   tools: ["Slack", "Email", "Trello", "Asana", "Salesforce", "Twilio"],
+  // },
+  // {
+  //   icon: Workflow,
+  //   title: "No-code Automation with Zapier and other tools",
+  //   description: "Streamline operations using Zapier, Make, HighLevel Automation, and n8n. Reduce manual tasks by 35% with intelligent automation.",
+  //   tools: ["Zapier", "Make", "n8n", "HighLevel"],
+  //   gradient: "from-secondary/20 to-primary/20",
+  // },
+  // {
+  //   icon: HandHelping,
+  //   title: "Technical Virtual Assistance",
+  //   description: "I help founders and online businesses manage websites, automate workflows, and handle technical systems so their operations run smoothly without stress.",
+  //   tools: ["WordPress", "Elementor", "Zapier", "N8n", "Make (Integromat)", "Airtable", "Stripe", "Slack", "basic HTML/CSS/JavaScript"],
+  //   gradient: "from-primary/20 to-tertiary/20",
+  // },
+
+  // {
+  //   icon: BarChart3,
+  //   title: "HighLevel CRM Setup & Optimization",
+  //   description: "I set up and optimize GoHighLevel CRM by building funnels, automations, pipelines, forms, and integrations that streamline lead management, follow-ups, and client communication.",
+  //   tools: ["GoHighLevel", "Custom CRM", "Stripe", "webhook integrations"],
+  //   gradient: "from-primary/20 to-secondary/20",
+  // },
+  // {
+  //   icon: Bot,
+  //   title: "Chatbot & AI Automation",
+  //   description: "I design, implement, and optimize AI-powered chatbots and automation workflows that handle customer inquiries, lead qualification, booking, and repetitive tasks—saving time while delivering consistent, personalized interactions.",
+  //   tools: ["N8n", "Vapi", "Grok", "ChatGPT", "OpenAI", "webhook integrations"],
+  //   gradient: "from-secondary/20 to-tertiary/20",
+  // },
+  // {
+  //   icon: Database,
+  //   title: "API & Payment Integration",
+  //   description: "I connect and automate your apps, platforms, and payment systems by integrating APIs, setting up Stripe payment flows, and building custom connections—ensuring seamless data transfer and smooth online transactions.",
+  //   tools: ["Stripe", "REST APIs","Webhooks","custom scripts (JavaScript)"],
+  //   gradient: "from-tertiary/20 to-primary/20",
+  // },  
   // {
   //   icon: Smartphone,
   //   title: "FinTech Support",
   //   description: "Expert e-payments support with 98% first-contact resolution. Top 1% in quality and empathy metrics.",
   //   tools: ["Payment Processing", "SaaS", "Troubleshooting"],
   // },
-  {
-    icon: Code2,
-    title: "Basic Web Development with AI and custom code",
-    description: "AI-assisted front-end features and quick builds using HTML, CSS, and React/JavaScript to enhance website functionality and user experience.",
-    tools: ["React", "JavaScript", "HTML", "CSS"],
-  },
-  {
-    icon: Mail,
-    title: "Customer Support and Technical Support",
-    description: "Email, chat, and CRM-based support with a focus on technical issues, ensuring timely and effective resolutions.",
-    tools: ["Slack", "Email", "Trello", "Asana", "Salesforce", "Twilio"],
-  },
-{
-    icon: Globe,
-    title: "Ongoing Support & Monthly Retainers",
-    description: "Continuous optimization and technical assistance to ensure your systems run smoothly and adapt to evolving business needs.",
-    tools: ["Zapier", "Make", "n8n", "HighLevel CRM", "WordPress (Elementor)", "Google Analytics", "Trello", "Asana", "Slack", "Email"],
-  },
+  // {
+  //   icon: Code2,
+  //   title: "Basic Web Development with AI and custom code",
+  //   description: "AI-assisted front-end features and quick builds using HTML, CSS, and React/JavaScript to enhance website functionality and user experience.",
+  //   tools: ["React", "JavaScript", "HTML", "CSS"],
+  // },
+  // {
+  //   icon: Mail,
+  //   title: "Customer Support and Technical Support",
+  //   description: "Email, chat, and CRM-based support with a focus on technical issues, ensuring timely and effective resolutions.",
+  //   tools: ["Slack", "Email", "Trello", "Asana", "Salesforce", "Twilio"],
+  // },
+// {
+//     icon: Globe,
+//     title: "Ongoing Support & Monthly Retainers",
+//     description: "Continuous optimization and technical assistance to ensure your systems run smoothly and adapt to evolving business needs.",
+//     tools: ["Zapier", "Make", "n8n", "HighLevel CRM", "WordPress (Elementor)", "Google Analytics", "Trello", "Asana", "Slack", "Email"],
+//   },
 ];
 
 export const Services = () => {
