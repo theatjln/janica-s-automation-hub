@@ -4,6 +4,9 @@ import n8nLogo from "@/assets/tools/n8n.svg";
 import gohighlevelLogo from "@/assets/tools/gohighlevel.png";
 import wordpressLogo from "@/assets/tools/wordpress.svg";
 import elementorLogo from "@/assets/tools/elementor.svg";
+import woocommerceLogo from "@/assets/tools/woocommerce.svg";
+import stripeLogo from "@/assets/tools/stripe.svg";
+import paypalLogo from "@/assets/tools/paypal.png";
 import asanaLogo from "@/assets/tools/asana.svg";
 import slackLogo from "@/assets/tools/slack.svg";
 import gmailLogo from "@/assets/tools/gmail.svg";
@@ -24,6 +27,9 @@ const toolCategories = [
     tools: [
       { name: "WordPress", logo: wordpressLogo },
       { name: "Elementor", logo: elementorLogo },
+      { name: "WooCommerce", logo: woocommerceLogo },
+      { name: "Stripe", logo: stripeLogo },
+      { name: "PayPal", logo: paypalLogo },
       { name: "React", logo: reactLogo },
       { name: "JavaScript", logo: javascriptLogo },
       { name: "HTML5", logo: htmlLogo },
