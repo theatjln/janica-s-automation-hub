@@ -49,6 +49,8 @@ const toolCategories = [
       { name: "Make.com", logo: makeLogo },
       { name: "n8n", logo: n8nLogo },
       { name: "GoHighLevel", logo: gohighlevelLogo },
+      { name: "Python", logo: pythonLogo },
+      { name: "JavaScript", logo: javascriptLogo },
     ],
   },
   {
