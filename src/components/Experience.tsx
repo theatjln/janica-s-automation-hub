@@ -72,7 +72,13 @@ const education = [
 
 const certificationCategories = [
   {
-    category: "Web Development & Design",
+    category: "WordPress/WooCommerce Management",
+    certs: [
+      { certificate: "WordPress Web Page Building and Maintenance (Dec 2025)", link: "https://drive.google.com/file/d/1itLvj3nFD9Q0bQBIxPsO5JO1NBLCoHbL/view?usp=sharing" },
+    ],
+  },
+  {
+    category: "Web Development & Web Design",
     certs: [
       { certfificate: "Web Design for Web Developers (Nov 2021)", link: "https://drive.google.com/file/d/1YvnlXPgJgZl_O_Fqn85oxBrEKwMyJEK3/view?usp=sharing" },
       { certfificate: "META React Basics (May 2025)", link: "https://drive.google.com/file/d/1ukAv1NB6az2aSUsZjDmp1cMDtlRvampf/view?usp=sharing" },
@@ -80,17 +86,17 @@ const certificationCategories = [
       { certfificate: "META Version Control (Apr 2023)", link: "https://drive.google.com/file/d/1xdwVOVkVZu9QvrQCYbI5f_ie-31ezOKX/view?usp=sharing" },
       { certfificate: "META Programming with JavaScript (Apr 2023)", link: "https://drive.google.com/file/d/1QcxPpaSBohL3MRuhZX-m7BX7WTX51yfi/view?usp=sharing" },
       { certfificate: "META Introduction to Frontend Development (Oct 2022)", link: "https://drive.google.com/file/d/1gO_pWyjhFOBf_vFrT4Qq1cBRYVFDsJAk/view?usp=sharing" },
-    ],
-  },
-  {
-    category: "WordPress Management",
-    certs: [
-      { certificate: "WordPress Web Page Building and Maintenance (Dec 2025)", link: "https://drive.google.com/file/d/1itLvj3nFD9Q0bQBIxPsO5JO1NBLCoHbL/view?usp=sharing" },
+      { certfificate: "META Introduction to Frontend Development (Oct 2022)", link: "https://drive.google.com/file/d/1gO_pWyjhFOBf_vFrT4Qq1cBRYVFDsJAk/view?usp=sharing" },
+      { certfificate: "Introduction to Web and eCommerce User Experience Design (Feb 2020)", link: "https://drive.google.com/file/d/1xNSNS5nfjLlOzE1yA4_mw6vkW99jwa3u/view?usp=sharing" },
+      { certfificate: "Python 3 Programming Hub Google Developers Launchpad (Oct 2024)", link: "https://drive.google.com/file/d/16LdNu2UnJCpqC3f5P3Bq65hlpgGCIbFt/view?usp=sharing" },
     ],
   },
   {
     category: "Business Automation & CRM",
     certs: [
+      { certificate: "Zapier - Automate Your Work (Oct 2025)", link: "https://drive.google.com/file/d/1ZaM1UJ4NrFhi8UaYm5ixAHtPWp4xMRxD/view?usp=sharing" },
+      { certificate: "Zapier - Customize Your Zap (Oct 2025)", link: "https://drive.google.com/file/d/1L-Kl_NPH6INLMkF3MiyPatKitO51Jo2Z/view?usp=sharing" },
+      { certificate: "Zapier - Build Your First Zap (Oct 2025)", link: "https://drive.google.com/file/d/1g5Ixo4_Rchf21T9yOUqjkljtbMD_lhHo/view?usp=sharing" },
       { certificate: "AI Automation with n8n (Dec 2025)", link: "https://drive.google.com/file/d/1w3yqNnMu8Akz8AM3TIWvP0Cs4X4f51TB/view?usp=sharing" },
       { certificate: "HighLevel CRM Full Training (Dec 2025)", link: "https://drive.google.com/file/d/1qL1GaAIA1V6OIQZdibaz-HifzhdUpY_L/view?usp=sharing" },
       { certificate: "No Code Automation with Make.com (Nov 2025)", link: "https://drive.google.com/file/d/1IXFxbTVmtgBICs-aL3xw1HlrEXlnW5vA/view?usp=sharing" },
@@ -99,10 +105,27 @@ const certificationCategories = [
     ],
   },
   {
+    category: "Artificial Intelligence",
+    certs: [
+      { certfificate: "Artificial Intelligence Programming Hub Google Developers Launchpad (Nov 2024)", link: "https://drive.google.com/file/d/19_p7_01N0pHNk81Zw0HhXHNH63Nd1XcB/view?usp=sharing" },
+      { certfificate: "Data Science Programming Hub Google Developers Launchpad (Nov 2024)", link: "https://drive.google.com/file/d/19b04BzcapekaqWnE6iQMS8vxfaw6ba0r/view?usp=sharing" },
+      { certfificate: "Python 3 Programming Hub Google Developers Launchpad (Oct 2024)", link: "https://drive.google.com/file/d/16LdNu2UnJCpqC3f5P3Bq65hlpgGCIbFt/view?usp=sharing" },
+    ]
+  },
+  {
+    category: "Graphic Design & Multimedia",
+    certs: [
+      { certificate: "Canva Essentials (May 2025)", link: "https://drive.google.com/file/d/12E7QxsAAF7qehn5mobAacwo6X65vvKsK/view?usp=sharing" },
+      { certificate: "Canva Graphic Desing Essentials (July 2025)", link: "https://drive.google.com/file/d/1fwJJNdfSuQEgbLlUggrA6HJxZqjFVFWG/view?usp=sharing" },
+    ]
+  },
+  {
     category: "Tech VA Support",
     certs: [
+      { certfificate: "IT Basics Programming Hub Google Developers Launchpad (Nov 2024)", link: "https://drive.google.com/file/d/17rFH0TSQvD7oSsw7Eb_24ILEbOn9F7Gw/view?usp=sharing" },
       { certificate: "SQL for Data Analysis (Nov 2025)", link: "https://drive.google.com/file/d/1TF9vEnD2pIhx3_dkJpRoJyi7EsZqvmmH/view?usp=sharing" },
       { certificate: "CEFR EF SET English C2 Proficient (July 2025)", link: "https://drive.google.com/file/d/1i9c3i0WiV9e_5UEAwiB6SqEtmd9wU4kt/view?usp=sharing" },
+      { certificate: "TESOL Certificate (June 2020)", link: "https://drive.google.com/file/d/1xAPAU_ihfevAHnLn7YqZH_kATFMR-SZd/view?usp=sharing" },
     ],
   },
 ];
