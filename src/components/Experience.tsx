@@ -69,21 +69,42 @@ const education = [
   },
 ];
 
-const certifications = [
-  {certfificate:"Web Design for Web Developers (Nov 2021)", link: "https://drive.google.com/file/d/1YvnlXPgJgZl_O_Fqn85oxBrEKwMyJEK3/view?usp=sharing"},
-  {certfificate:"META React Basics (May 2025)", link: "https://drive.google.com/file/d/1ukAv1NB6az2aSUsZjDmp1cMDtlRvampf/view?usp=sharing"},
-  {certfificate:"META HTML & CSS In-Depth (May 2025)", link: "https://drive.google.com/file/d/1HUpRaIJb0ynNlfkAxRcCWm7P9KNstrKW/view?usp=sharing"},
-  {certfificate:"META Version Control (Apr 2023)", link: "https://drive.google.com/file/d/1xdwVOVkVZu9QvrQCYbI5f_ie-31ezOKX/view?usp=sharing"},
-  {certfificate:"META Programming with JavaScript (Apr 2023)", link: "https://drive.google.com/file/d/1QcxPpaSBohL3MRuhZX-m7BX7WTX51yfi/view?usp=sharing"},
-  {certfificate:"META Introduction to Frontend Development (Oct 2022)", link: "https://drive.google.com/file/d/1gO_pWyjhFOBf_vFrT4Qq1cBRYVFDsJAk/view?usp=sharing"},
-  {certfificate:"WordPress Web Page Building and Maintenance (Dec 2025)", link: "https://drive.google.com/file/d/1itLvj3nFD9Q0bQBIxPsO5JO1NBLCoHbL/view?usp=sharing"},
-  {certfificate:"AI Automation with n8n (Dec 2025)", link: "https://drive.google.com/file/d/1w3yqNnMu8Akz8AM3TIWvP0Cs4X4f51TB/view?usp=sharing"},
-  {certfificate:"HighLevel CRM Full Training (Dec 2025)", link: "https://drive.google.com/file/d/1qL1GaAIA1V6OIQZdibaz-HifzhdUpY_L/view?usp=sharing"},
-  {certfificate:"Prompt Engineering (Nov 2025)", link: "https://drive.google.com/file/d/1OP_Vdt4YbDqRzwFO3DRpCGp2BzBUL1rl/view?usp=sharing"},
-  {certfificate:"No Code Automation with Make.com (Nov 2025)", link: "https://drive.google.com/file/d/1IXFxbTVmtgBICs-aL3xw1HlrEXlnW5vA/view?usp=sharing"},
-  {certfificate:"No Code Automation with Zapier (Nov 2025)", link: "https://drive.google.com/drive/folders/1waxrG-J3PDy10h5rQFP81h10NeQsU23e?usp=sharing"},
-  {certfificate:"SQL for Data Analysis (Nov 2025)", link: "https://drive.google.com/file/d/1TF9vEnD2pIhx3_dkJpRoJyi7EsZqvmmH/view?usp=drive_link"},
-  {certfificate:"CEFR EF SET English C2 Proficient (July 2025)", link: "https://drive.google.com/file/d/1i9c3i0WiV9e_5UEAwiB6SqEtmd9wU4kt/view?usp=sharing"},
+
+const certificationCategories = [
+  {
+    category: "Web Development & Design",
+    certs: [
+      { certfificate: "Web Design for Web Developers (Nov 2021)", link: "https://drive.google.com/file/d/1YvnlXPgJgZl_O_Fqn85oxBrEKwMyJEK3/view?usp=sharing" },
+      { certfificate: "META React Basics (May 2025)", link: "https://drive.google.com/file/d/1ukAv1NB6az2aSUsZjDmp1cMDtlRvampf/view?usp=sharing" },
+      { certfificate: "META HTML & CSS In-Depth (May 2025)", link: "https://drive.google.com/file/d/1HUpRaIJb0ynNlfkAxRcCWm7P9KNstrKW/view?usp=sharing" },
+      { certfificate: "META Version Control (Apr 2023)", link: "https://drive.google.com/file/d/1xdwVOVkVZu9QvrQCYbI5f_ie-31ezOKX/view?usp=sharing" },
+      { certfificate: "META Programming with JavaScript (Apr 2023)", link: "https://drive.google.com/file/d/1QcxPpaSBohL3MRuhZX-m7BX7WTX51yfi/view?usp=sharing" },
+      { certfificate: "META Introduction to Frontend Development (Oct 2022)", link: "https://drive.google.com/file/d/1gO_pWyjhFOBf_vFrT4Qq1cBRYVFDsJAk/view?usp=sharing" },
+    ],
+  },
+  {
+    category: "WordPress Management",
+    certs: [
+      { certificate: "WordPress Web Page Building and Maintenance (Dec 2025)", link: "https://drive.google.com/file/d/1itLvj3nFD9Q0bQBIxPsO5JO1NBLCoHbL/view?usp=sharing" },
+    ],
+  },
+  {
+    category: "Business Automation & CRM",
+    certs: [
+      { certificate: "AI Automation with n8n (Dec 2025)", link: "https://drive.google.com/file/d/1w3yqNnMu8Akz8AM3TIWvP0Cs4X4f51TB/view?usp=sharing" },
+      { certificate: "HighLevel CRM Full Training (Dec 2025)", link: "https://drive.google.com/file/d/1qL1GaAIA1V6OIQZdibaz-HifzhdUpY_L/view?usp=sharing" },
+      { certificate: "No Code Automation with Make.com (Nov 2025)", link: "https://drive.google.com/file/d/1IXFxbTVmtgBICs-aL3xw1HlrEXlnW5vA/view?usp=sharing" },
+      { certificate: "No Code Automation with Zapier (Nov 2025)", link: "https://drive.google.com/drive/folders/1waxrG-J3PDy10h5rQFP81h10NeQsU23e?usp=sharing" },
+      { certificate: "Prompt Engineering (Nov 2025)", link: "https://drive.google.com/file/d/1OP_Vdt4YbDqRzwFO3DRpCGp2BzBUL1rl/view?usp=sharing" },
+    ],
+  },
+  {
+    category: "Tech VA Support",
+    certs: [
+      { certificate: "SQL for Data Analysis (Nov 2025)", link: "https://drive.google.com/file/d/1TF9vEnD2pIhx3_dkJpRoJyi7EsZqvmmH/view?usp=sharing" },
+      { certificate: "CEFR EF SET English C2 Proficient (July 2025)", link: "https://drive.google.com/file/d/1i9c3i0WiV9e_5UEAwiB6SqEtmd9wU4kt/view?usp=sharing" },
+    ],
+  },
 ];
 
 
@@ -102,7 +123,7 @@ export const Experience = () => {
     <section id="experience" className="py-28 relative overflow-hidden">
       {/* Subtle gradient background */}
       <div className="absolute inset-0 bg-gradient-to-b from-muted/30 via-transparent to-muted/30" />
-      
+
       <div className="container mx-auto px-4 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-20">
@@ -215,18 +236,25 @@ export const Experience = () => {
                 </div>
                 <h3 className="text-lg font-bold">Certifications</h3>
               </div>
-              <div className="space-y-3 max-h-72 overflow-y-auto pr-2">
-                {certifications.map((cert, index) => (
-                  <a
-                    href={cert.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    key={index}
-                    className="group flex items-start gap-3 text-xs text-muted-foreground hover:text-primary transition-colors p-2 rounded-lg hover:bg-primary/5"
-                  >
-                    <ExternalLink className="w-3.5 h-3.5 mt-0.5 text-primary shrink-0 group-hover:scale-110 transition-transform" />
-                    <span className="leading-relaxed">{cert.certfificate}</span>
-                  </a>
+              <div className="space-y-4 max-h-80 overflow-y-auto pr-2">
+                {certificationCategories.map((category, catIndex) => (
+                  <div key={catIndex}>
+                    <p className="text-xs font-semibold text-tertiary mb-2">{category.category}</p>
+                    <div className="space-y-1 pl-2 border-l-2 border-tertiary/20">
+                      {category.certs.map((cert, index) => (
+                        <a
+                          href={cert.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          key={index}
+                          className="group flex items-start gap-2 text-xs text-muted-foreground hover:text-primary transition-colors p-1.5 rounded-lg hover:bg-primary/5"
+                        >
+                          <ExternalLink className="w-3 h-3 mt-0.5 text-primary shrink-0 group-hover:scale-110 transition-transform" />
+                          <span className="leading-relaxed">{cert.certificate}</span>
+                        </a>
+                      ))}
+                    </div>
+                  </div>
                 ))}
               </div>
             </div>
