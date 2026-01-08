@@ -70,6 +70,12 @@ const education = [
 ];
 
 const certifications = [
+  {certfificate:"Web Design for Web Developers (Nov 2021)", link: "https://drive.google.com/file/d/1YvnlXPgJgZl_O_Fqn85oxBrEKwMyJEK3/view?usp=sharing"},
+  {certfificate:"META React Basics (May 2025)", link: "https://drive.google.com/file/d/1ukAv1NB6az2aSUsZjDmp1cMDtlRvampf/view?usp=sharing"},
+  {certfificate:"META HTML & CSS In-Depth (May 2025)", link: "https://drive.google.com/file/d/1HUpRaIJb0ynNlfkAxRcCWm7P9KNstrKW/view?usp=sharing"},
+  {certfificate:"META Version Control (Apr 2023)", link: "https://drive.google.com/file/d/1xdwVOVkVZu9QvrQCYbI5f_ie-31ezOKX/view?usp=sharing"},
+  {certfificate:"META Programming with JavaScript (Apr 2023)", link: "https://drive.google.com/file/d/1QcxPpaSBohL3MRuhZX-m7BX7WTX51yfi/view?usp=sharing"},
+  {certfificate:"META Introduction to Frontend Development (Oct 2022)", link: "https://drive.google.com/file/d/1gO_pWyjhFOBf_vFrT4Qq1cBRYVFDsJAk/view?usp=sharing"},
   {certfificate:"WordPress Web Page Building and Maintenance (Dec 2025)", link: "https://drive.google.com/file/d/1itLvj3nFD9Q0bQBIxPsO5JO1NBLCoHbL/view?usp=sharing"},
   {certfificate:"AI Automation with n8n (Dec 2025)", link: "https://drive.google.com/file/d/1w3yqNnMu8Akz8AM3TIWvP0Cs4X4f51TB/view?usp=sharing"},
   {certfificate:"HighLevel CRM Full Training (Dec 2025)", link: "https://drive.google.com/file/d/1qL1GaAIA1V6OIQZdibaz-HifzhdUpY_L/view?usp=sharing"},
@@ -77,8 +83,6 @@ const certifications = [
   {certfificate:"No Code Automation with Make.com (Nov 2025)", link: "https://drive.google.com/file/d/1IXFxbTVmtgBICs-aL3xw1HlrEXlnW5vA/view?usp=sharing"},
   {certfificate:"No Code Automation with Zapier (Nov 2025)", link: "https://drive.google.com/drive/folders/1waxrG-J3PDy10h5rQFP81h10NeQsU23e?usp=sharing"},
   {certfificate:"SQL for Data Analysis (Nov 2025)", link: "https://drive.google.com/file/d/1TF9vEnD2pIhx3_dkJpRoJyi7EsZqvmmH/view?usp=drive_link"},
-  {certfificate:"META React Basics (May 2025)", link: "https://drive.google.com/file/d/1ukAv1NB6az2aSUsZjDmp1cMDtlRvampf/view?usp=sharing"},
-  {certfificate:"META HTML & CSS In-Depth (May 2025)", link: "https://drive.google.com/file/d/1HUpRaIJb0ynNlfkAxRcCWm7P9KNstrKW/view?usp=sharing"},
   {certfificate:"CEFR EF SET English C2 Proficient (July 2025)", link: "https://drive.google.com/file/d/1i9c3i0WiV9e_5UEAwiB6SqEtmd9wU4kt/view?usp=sharing"},
 ];
 
