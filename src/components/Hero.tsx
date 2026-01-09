@@ -9,15 +9,15 @@ export const Hero = () => {
       <div className="orb w-[600px] h-[600px] bg-primary/20 top-[-200px] left-[-200px]" />
       <div className="orb w-[500px] h-[500px] bg-tertiary/15 bottom-[-150px] right-[-150px]" style={{ animationDelay: '-5s' }} />
       <div className="orb w-[400px] h-[400px] bg-secondary/10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" style={{ animationDelay: '-10s' }} />
-      
+
       {/* Background Image with overlay */}
-      <div 
+      <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20 dark:opacity-10"
         style={{ backgroundImage: `url(${heroBg})` }}
       />
-      
+
       {/* Grid Pattern Overlay */}
-      <div 
+      <div
         className="absolute inset-0 opacity-[0.03] dark:opacity-[0.05]"
         style={{
           backgroundImage: `linear-gradient(hsl(var(--foreground)) 1px, transparent 1px),
@@ -36,14 +36,14 @@ export const Hero = () => {
               <span className="text-xs font-mono uppercase tracking-wider text-primary">Available for Projects</span>
             </div>
 
-            {/* Main Heading */} 
+            {/* Main Heading */}
             {/* <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8 animate-fade-in delay-100 leading-[1.1]">
               Technical Virtual
               <br />
               <span className="gradient-text-animated">Assistant & Developer</span>
             </h1>  */}
 
-{/* to restore */}
+            {/* to restore */}
             {/* <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8 animate-fade-in delay-100 leading-[1.1]">
               WordPress <span className="gradient-text-animated">Elementor </span> & <span className="gradient-text-animated">Automation</span> Specialist
               <br />
@@ -51,11 +51,11 @@ export const Hero = () => {
 
 
             {/* temporary main heading */}
-             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8 animate-fade-in delay-100 leading-[1.1]">
-              Web <span className="gradient-text-animated">Designer </span> & <span className="gradient-text-animated">Front-End</span> Developer |   E-commerce & Business <span className="gradient-text-animated">Automation</span> Specialist
+            <h1 className="text-5xl md:text-5xl lg:text-6xl font-bold mb-8 animate-fade-in delay-100 leading-[1.1]">
+              Web <span className="gradient-text-animated">Designer </span> & <span className="gradient-text-animated">Front-End</span> Developer |   E-commerce & Business <span className="gradient-text-animated">Automation</span>
               <br />
-            </h1> 
-            
+            </h1>
+
             {/* Professional Summary */}
             {/* <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto lg:mx-0 mb-10 leading-relaxed animate-fade-in delay-200">
               Hi, I'm <span className="text-foreground font-semibold">Janica</span> — Your{" "}
@@ -71,15 +71,25 @@ export const Hero = () => {
               </span>
             </p> */}
 
-            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto lg:mx-0 mb-10 leading-relaxed animate-fade-in delay-200">
-              Hi, I'm <span className="text-foreground font-semibold">Janica</span>,
-               {/* — Your{" "}
-              <span className="text-secondary font-semibold">Workflow Automation Expert</span>,
-              <br className="hidden sm:block" /> */}
+            {/* to restore */}
+            {/* <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto lg:mx-0 mb-10 leading-relaxed animate-fade-in delay-200">
+              Hi, I'm <span className="text-foreground font-semibold">Janica</span>, 
               <span className="mt-2 block">
                 helping service businesses automate leads, CRM workflows, and website operations — using{" "}
               <span className="text-primary font-semibold">Zapier, Make, n8n, GoHighLevel, custom code  </span> and <span className="text-secondary font-semibold">WordPress Elementor</span>.
               </span> 
+            </p> */}
+
+            {/* temporary subheading */}
+            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto lg:mx-0 mb-10 leading-relaxed animate-fade-in delay-200">
+              Hi, I'm <span className="text-foreground font-semibold">Janica</span>,
+              {/* — Your{" "}
+              <span className="text-secondary font-semibold">Workflow Automation Expert</span>,
+              <br className="hidden sm:block" /> */}
+              <span className="mt-2 block">
+                helping service businesses automate leads, CRM workflows, and website operations — using{" "}
+                <span className="text-primary font-semibold">Zapier, Make, n8n, GoHighLevel, custom code  </span> and <span className="text-secondary font-semibold">Shopify | WordPress Elementor + WooCommerce</span>.
+              </span>
             </p>
 
 
@@ -141,13 +151,13 @@ export const Hero = () => {
               <div className="absolute inset-0 rounded-full border border-primary/20 scale-110 animate-pulse" />
               <div className="absolute inset-0 rounded-full border border-tertiary/10 scale-[1.25]" style={{ animationDelay: '1s' }} />
               <div className="absolute inset-0 rounded-full border border-secondary/10 scale-[1.4]" style={{ animationDelay: '2s' }} />
-              
+
               {/* Glow effect */}
               <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary/30 via-tertiary/20 to-secondary/30 blur-3xl scale-110 animate-pulse" />
-              
+
               {/* Rotating gradient border */}
               <div className="absolute inset-[-4px] rounded-full bg-gradient-conic from-primary via-tertiary to-primary animate-spin-slow opacity-50" />
-              
+
               {/* Image container */}
               <div className="relative w-72 h-72 md:w-80 md:h-80 lg:w-[400px] lg:h-[400px] rounded-full overflow-hidden border-4 border-background shadow-elevated">
                 <img
@@ -156,7 +166,7 @@ export const Hero = () => {
                   className="w-full h-full object-cover object-center"
                 />
               </div>
-              
+
               {/* Floating elements */}
               <div className="absolute -top-4 -right-4 glass-card p-3 rounded-xl animate-float shadow-elevated">
                 <Zap className="w-6 h-6 text-primary" />
