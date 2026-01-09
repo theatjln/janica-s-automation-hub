@@ -52,7 +52,7 @@ export const Hero = () => {
 
             {/* temporary main heading */}
             <h1 className="text-5xl md:text-5xl lg:text-6xl font-bold mb-8 animate-fade-in delay-100 leading-[1.1]">
-              Web <span className="gradient-text-animated">Designer </span> & <span className="gradient-text-animated">Front-End</span> Developer |   E-commerce & Business <span className="gradient-text-animated">Automation</span>
+              Web <span className="gradient-text-animated">Designer </span> & <span className="gradient-text-animated">Developer</span> | E-commerce & Business <span className="gradient-text-animated">Automation</span>
               <br />
             </h1>
 
