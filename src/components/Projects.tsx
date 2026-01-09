@@ -23,11 +23,12 @@ import zapierDailyFollowup from "@/assets/projects/zapier-daily-followup.png";
 import zapierAsanaCrm from "@/assets/projects/zapier-asana-crm.png";
 import wordpressElementorPortfolio from "@/assets/projects/wordpress-elementor-portfolio.png";
 import webDevelopmentComposerPortfolio from "@/assets/projects/wordpress-composer-portfolio.png";
+import shopifyCulturalTourTheme from "@/assets/projects/shopify-cultural-tour-theme.png";
 
 interface Project {
   id: string;
   title: string;
-  tool: "WordPress" | "Zapier" | "Make" | "n8n" | "GoHighLevel" | "Web Development";
+  tool: "WordPress" | "Zapier" | "Make" | "n8n" | "GoHighLevel" | "Web Development" | "Shopify";
   description: string;
   impact: string;
   image?: string;
@@ -408,10 +409,19 @@ const projects: Project[] = [
     techStack: ["React", "JavaScript", "CSS", "HTML", "Responsive Design"],
     isAiFocused: true,
   },
+  {
+    id: "shopify-cultural-tour-theme",
+    title: "Shopify – Bespoke Cultural Tour Platform",
+    tool: "Shopify",
+    description: "Custom Shopify theme for a cultural tour platform celebrating stories of freedom and unity, featuring immersive experiences and event showcases.",
+    impact: "Full e-commerce store",
+    image: shopifyCulturalTourTheme,
+    techStack: ["Shopify", "Liquid", "Theme Development", "E-commerce"],
+  },
 ];
 
 
-const filterOptions = ["All", "WordPress", "Zapier", "Make", "n8n", "GoHighLevel", "Web Development", "AI-Focused"];
+const filterOptions = ["All", "WordPress", "Shopify", "Zapier", "Make", "n8n", "GoHighLevel", "Web Development", "AI-Focused"];
 
 const toolColors: Record<string, string> = {
   Zapier: "tool-badge zapier",
@@ -420,6 +430,7 @@ const toolColors: Record<string, string> = {
   GoHighLevel: "tool-badge gohighlevel",
   WordPress: "tool-badge wordpress",
   "Web Development": "tool-badge web-development",
+  Shopify: "tool-badge shopify",
 };
 
 export const Projects = () => {
@@ -432,6 +443,7 @@ export const Projects = () => {
     if (activeFilter === "Make") return project.tool === "Make";
     if (activeFilter === "WordPress") return project.tool === "WordPress";
     if (activeFilter === "Web Development") return project.tool === "Web Development";
+    if (activeFilter === "Shopify") return project.tool === "Shopify";
     return project.tool === activeFilter;
   });
 
