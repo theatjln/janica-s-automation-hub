@@ -20,6 +20,7 @@ import reactLogo from "@/assets/tools/react.svg";
 import javascriptLogo from "@/assets/tools/javascript.svg";
 import htmlLogo from "@/assets/tools/html.svg";
 import cssLogo from "@/assets/tools/css.svg";
+import pythonLogo from "@/assets/tools/python.svg";
 // import clonewebxLogo from "@/assets/tools/clonewebx.png";
 import lovableLogo from "@/assets/tools/lovable.png";
 
@@ -38,6 +39,7 @@ const toolCategories = [
       { name: "JavaScript", logo: javascriptLogo },
       { name: "HTML5", logo: htmlLogo },
       { name: "CSS3", logo: cssLogo },
+      { name: "Python", logo: pythonLogo },
     ],
   },
   {
@@ -47,6 +49,8 @@ const toolCategories = [
       { name: "Make.com", logo: makeLogo },
       { name: "n8n", logo: n8nLogo },
       { name: "GoHighLevel", logo: gohighlevelLogo },
+      { name: "Python", logo: pythonLogo },
+      { name: "JavaScript", logo: javascriptLogo },
     ],
   },
   {
