@@ -43,11 +43,18 @@ export const Hero = () => {
               <span className="gradient-text-animated">Assistant & Developer</span>
             </h1>  */}
 
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8 animate-fade-in delay-100 leading-[1.1]">
+{/* to restore */}
+            {/* <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8 animate-fade-in delay-100 leading-[1.1]">
               WordPress <span className="gradient-text-animated">Elementor </span> & <span className="gradient-text-animated">Automation</span> Specialist
               <br />
+            </h1>  */}
+
+
+            {/* temporary main heading */}
+             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8 animate-fade-in delay-100 leading-[1.1]">
+              Web <span className="gradient-text-animated">Designer </span> & <span className="gradient-text-animated">Front-End</span> Developer |   E-commerce & Business <span className="gradient-text-animated">Automation</span> Specialist
+              <br />
             </h1> 
-            
             
             {/* Professional Summary */}
             {/* <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto lg:mx-0 mb-10 leading-relaxed animate-fade-in delay-200">
