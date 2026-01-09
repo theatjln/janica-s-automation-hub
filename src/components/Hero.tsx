@@ -52,8 +52,8 @@ export const Hero = () => {
 
             {/* temporary main heading */}
             <h1 className="text-5xl md:text-5xl lg:text-6xl font-bold mb-8 animate-fade-in delay-100 leading-[1.1]">
-              Web <span className="gradient-text-animated">Designer </span> & <span className="gradient-text-animated">Developer</span> | E-commerce & Business <span className="gradient-text-animated">Automation</span>
-              <br />
+              Web <span className="gradient-text-animated">Designer </span> & <span className="gradient-text-animated">Developer</span> 
+               <br />E-commerce & Business <span className="gradient-text-animated">Automation</span>
             </h1>
 
             {/* Professional Summary */}
@@ -88,7 +88,7 @@ export const Hero = () => {
               <br className="hidden sm:block" /> */}
               <span className="mt-2 block">
                 helping service businesses automate leads, CRM workflows, and website operations — using{" "}
-                <span className="text-primary font-semibold">Zapier, Make, n8n, GoHighLevel, custom code  </span> and <span className="text-secondary font-semibold">Shopify | WordPress Elementor + WooCommerce</span>.
+                <span className="text-primary font-semibold">Zapier, Make, n8n, GoHighLevel, custom code  </span> and <span className="text-secondary font-semibold">Shopify </span> |  <span className="text-secondary font-semibold"> WordPress Elementor + WooCommerce</span>.
               </span>
             </p>
 
