@@ -16,10 +16,10 @@ import {
 const services = [
     {
     icon: Layout,
-    title: "WordPress Management (Elementor)",
+    title: "Shopify/WordPress Management (Elementor)",
     // description: "I manage and maintain WordPress websites using Elementor, handling landing page creation, page edits, layout updates, plugin management, performance checks, and basic troubleshooting to keep your site secure, fast, and visually polished.",
     description: "I manage landing page creation, site edits & fixes, speed & layout optimization, and form integrations.",
-    tools: ["WordPress", "Elementor", "Elementor Pro", "WP Plugins", "HTML/CSS", "basic SEO tools"],
+    tools: ["WordPress", "Elementor", "Shopify", "Liquid", "Elementor Pro", "WP Plugins", "HTML/CSS", "basic SEO tools"],
     gradient: "from-tertiary/20 to-secondary/20",
   },
   {
